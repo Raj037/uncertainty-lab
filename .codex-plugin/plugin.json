@@ -1,0 +1,25 @@
+{
+  "interface": {
+    "displayName": "Uncertainty Lab",
+    "shortDescription": "Audit and propagate uncertainty",
+    "longDescription": "A fail-closed scientific uncertainty-modeling assistant spanning measurement-model adequacy, structural model uncertainty, aleatory and epistemic propagation, nonlinear complex quantities, static/time/system reliability, Bayesian calibration, robust decisions, validated single/multi-fidelity surrogates, and experiment design. v1.0 preserves every qualified v0.9-and-earlier engine and adds explicit model-ensemble decomposition, robust scenario-weight decisions, and nonlinear complex Monte Carlo with local real-coordinate verification.",
+    "developerName": "Rajat Aggarwal",
+    "category": "Education",
+    "capabilities": [
+      "Interactive"
+    ],
+    "defaultPrompt": [
+      "Audit this problem across measurement-model, structural-model, parameter, distributional, covariance, numerical, and decision uncertainty; preserve unresolved assumptions rather than inventing them.",
+      "Combine these explicit competing models, separate within-model from between-model uncertainty, and show how conclusions change under uncertain model weights.",
+      "Propagate this nonlinear complex-valued model with the full real/imag covariance, report magnitude/phase diagnostics, and compare Monte Carlo against local real-coordinate linearization."
+    ]
+  },
+  "name": "uncertainty-lab",
+  "version": "1.0.0",
+  "description": "Research-grade uncertainty modeling with structural model ensembles, robust decisions under model-weight uncertainty, nonlinear complex propagation, constrained NUTS, epistemic p-boxes, time/system reliability, multi-fidelity UQ, global experimental design, and inherited fail-closed assurance.",
+  "author": {
+    "name": "Rajat Aggarwal"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

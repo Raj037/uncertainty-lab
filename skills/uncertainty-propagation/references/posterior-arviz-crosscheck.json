@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "arviz_version": "1.1.0",
+  "seed": 708,
+  "chains_shape": [
+    4,
+    2400,
+    2
+  ],
+  "rows": [
+    {
+      "parameter": "a",
+      "ours": {
+        "rhat": 1.0000220833862448,
+        "bulk_ess": 9600.0,
+        "tail_ess": 8687.301795737943
+      },
+      "arviz": {
+        "rhat": 1.0000220833862448,
+        "bulk_ess": 9630.97036156975,
+        "tail_ess": 8668.219901332031
+      },
+      "relative_bulk_difference": 0.0032157052100722037,
+      "relative_tail_difference": 0.0022013625200001754,
+      "absolute_rhat_difference": 0.0
+    },
+    {
+      "parameter": "b",
+      "ours": {
+        "rhat": 0.9998482145348077,
+        "bulk_ess": 9357.417778879357,
+        "tail_ess": 9546.979340113066
+      },
+      "arviz": {
+        "rhat": 0.9998482145348077,
+        "bulk_ess": 9357.417778879357,
+        "tail_ess": 9546.979340113066
+      },
+      "relative_bulk_difference": 0.0,
+      "relative_tail_difference": 0.0,
+      "absolute_rhat_difference": 0.0
+    }
+  ],
+  "claim_boundary": "Independent implementation cross-check in the build environment; ArviZ is not a runtime dependency of the plugin."
+}

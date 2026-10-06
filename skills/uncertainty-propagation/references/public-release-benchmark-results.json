@@ -1,0 +1,192 @@
+{
+  "benchmark_version": "1.1",
+  "summary": {
+    "all_pass": true,
+    "passed": 11,
+    "total": 11
+  },
+  "tests": {
+    "adequacy_nonrejection_not_proof": {
+      "adequacy_conclusion": "EFFECT_REGISTER_COMPLETENESS_NOT_ESTABLISHED",
+      "model_status": "PROVISIONAL",
+      "seconds": 0.0026993749997927807,
+      "status": "PASS"
+    },
+    "arviz_rank_rhat_ess": {
+      "arviz_version": "1.1.0",
+      "rows": [
+        {
+          "arviz": {
+            "bulk_ess": 9630.97036156975,
+            "rhat": 1.0000220833862448,
+            "tail_ess": 8668.219901332031
+          },
+          "bulk_ess_rel_diff": 0.0032157052100722037,
+          "ours": {
+            "bulk_ess": 9600.0,
+            "rhat": 1.0000220833862448,
+            "tail_ess": 8687.301795737943
+          },
+          "parameter": "a",
+          "rhat_abs_diff": 0.0,
+          "tail_ess_rel_diff": 0.0022013625200001754
+        },
+        {
+          "arviz": {
+            "bulk_ess": 9357.417778879357,
+            "rhat": 0.9998482145348077,
+            "tail_ess": 9546.979340113066
+          },
+          "bulk_ess_rel_diff": 0.0,
+          "ours": {
+            "bulk_ess": 9357.417778879357,
+            "rhat": 0.9998482145348077,
+            "tail_ess": 9546.979340113066
+          },
+          "parameter": "b",
+          "rhat_abs_diff": 0.0,
+          "tail_ess_rel_diff": 0.0
+        }
+      ],
+      "seconds": 0.849317553002038,
+      "status": "PASS"
+    },
+    "form_scale_invariance": {
+      "beta_base": 4.0,
+      "beta_scaled": 4.0,
+      "difference": 0.0,
+      "seconds": 0.0014409169998543803,
+      "status": "PASS"
+    },
+    "jcgm_gum5_16_examples": {
+      "case_count": 16,
+      "case_statuses": [
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS",
+        "PASS"
+      ],
+      "seconds": 0.04994892600007006,
+      "status": "PASS"
+    },
+    "missing_joint_law_fail_closed": {
+      "message": "joint_model.kind must explicitly specify empirical_samples, gaussian_copula, t_copula, multivariate_normal, or multivariate_t",
+      "seconds": 8.465500286547467e-05,
+      "status": "PASS"
+    },
+    "nonlinear_complex_linear_consistency": {
+      "exact_covariance": [
+        [
+          0.85,
+          -0.35
+        ],
+        [
+          -0.35,
+          0.8399999999999999
+        ]
+      ],
+      "local_linearized_covariance": [
+        [
+          0.85000000000016,
+          -0.3500000000000827
+        ],
+        [
+          -0.3500000000000827,
+          0.8399999999998516
+        ]
+      ],
+      "mc_covariance": [
+        [
+          0.8510356283590663,
+          -0.35122801869648324
+        ],
+        [
+          -0.35122801869648324,
+          0.838427452433423
+        ]
+      ],
+      "seconds": 0.017164535998745123,
+      "status": "PASS"
+    },
+    "openturns_cantilever_taylor": {
+      "abs_errors": {
+        "mean": 1.3801452780626278e-07,
+        "variance": 1.141104484828851e-09
+      },
+      "ours": {
+        "mean": 0.17011113801452782,
+        "variance": 0.0004112811411044848,
+        "verification": "PASS"
+      },
+      "published_reference": {
+        "mean": 0.170111,
+        "variance": 0.00041128
+      },
+      "seconds": 0.029803360997902928,
+      "status": "PASS"
+    },
+    "robust_decision_model_weight_uncertainty": {
+      "bayes_action": "risky",
+      "minimax_action": "safe",
+      "seconds": 0.008066345999395708,
+      "status": "PASS"
+    },
+    "structural_ensemble_total_variance_identity": {
+      "between": [
+        [
+          1.0
+        ]
+      ],
+      "mixture_mean": [
+        1.0
+      ],
+      "seconds": 0.0003999799992016051,
+      "status": "PASS",
+      "total": [
+        [
+          2.0
+        ]
+      ],
+      "within": [
+        [
+          1.0
+        ]
+      ]
+    },
+    "tiny_indefinite_fail_closed": {
+      "message": "tiny bad not PSD on variance-normalized basis",
+      "seconds": 0.0001533959984953981,
+      "status": "PASS"
+    },
+    "uqpy_form_linear_2d": {
+      "ours": {
+        "beta": 3.0902,
+        "design_point_u": [
+          2.1851013752226693,
+          2.1851013752226685
+        ],
+        "pf": 0.0010001087832070706
+      },
+      "published_reference": {
+        "beta": 3.0902,
+        "exact_pf_from_beta": 0.0010001087832070706,
+        "pf_approx": "~1e-3"
+      },
+      "seconds": 0.0017008299982990138,
+      "status": "PASS"
+    }
+  },
+  "tool": "Uncertainty Lab v1.0.0"
+}

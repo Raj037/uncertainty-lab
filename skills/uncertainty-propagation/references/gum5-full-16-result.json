@@ -1,0 +1,624 @@
+{
+  "benchmark": "JCGM_GUM-5_2026_all_16_examples",
+  "source": {
+    "title": "JCGM GUM-5:2026 \u2014 Guide to the expression of uncertainty in measurement \u2014 Part 5: Examples",
+    "doi": "10.59161/YNLY8209",
+    "edition": "First edition 2026",
+    "official_publication": "https://www.bipm.org/en/committees/jc/jcgm/publications"
+  },
+  "status": "PASS",
+  "hard_gate_examples": 16,
+  "cases": [
+    {
+      "example": 1,
+      "title": "Measurement of pH: linear interpolation",
+      "gate_scope": "full compact stipulated-temperature model",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "pH",
+          "observed": 7.000227461538461,
+          "expected": 7.0002,
+          "atol": 5e-05,
+          "rtol": 0.0,
+          "error": 2.746153846100441e-05,
+          "tolerance": 5e-05,
+          "passed": true
+        },
+        {
+          "name": "standard_uncertainty",
+          "observed": 0.004082651578804244,
+          "expected": 0.0041,
+          "atol": 5e-05,
+          "rtol": 0.0,
+          "error": 1.7348421195756587e-05,
+          "tolerance": 5e-05,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 2,
+      "title": "Determination of benzo[a]pyrene",
+      "gate_scope": "full GUF first-order model using table 2.1",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "mass_ng",
+          "observed": 0.014028310288530493,
+          "expected": 0.014,
+          "atol": 0.0006,
+          "rtol": 0.0,
+          "error": 2.831028853049304e-05,
+          "tolerance": 0.0006,
+          "passed": true
+        },
+        {
+          "name": "variance_ng2",
+          "observed": 4.076888193898663e-06,
+          "expected": 4.1e-06,
+          "atol": 1.5e-07,
+          "rtol": 0.0,
+          "error": 2.3111806101336997e-08,
+          "tolerance": 1.5e-07,
+          "passed": true
+        },
+        {
+          "name": "standard_uncertainty_ng",
+          "observed": 0.002019130553951047,
+          "expected": 0.002,
+          "atol": 8e-05,
+          "rtol": 0.0,
+          "error": 1.913055395104694e-05,
+          "tolerance": 8e-05,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 3,
+      "title": "Relative molecular mass of glucose",
+      "gate_scope": "full compact linear model",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "relative_molecular_mass",
+          "observed": 180.15576,
+          "expected": 180.1557,
+          "atol": 0.0001,
+          "rtol": 0.0,
+          "error": 5.999999999062311e-05,
+          "tolerance": 0.0001,
+          "passed": true
+        },
+        {
+          "name": "standard_uncertainty",
+          "observed": 0.0038235585519251565,
+          "expected": 0.0038,
+          "atol": 5e-05,
+          "rtol": 0.0,
+          "error": 2.3558551925156532e-05,
+          "tolerance": 5e-05,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 4,
+      "title": "Gravimetric mixture preparation and calculation of composition",
+      "gate_scope": "published weighing-stage mean from rounded table 4.1",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "r0_g",
+          "observed": -152.02471428571428,
+          "expected": -152.0243,
+          "atol": 0.00051,
+          "rtol": 0.0,
+          "error": 0.00041428571427104544,
+          "tolerance": 0.00051,
+          "passed": true
+        },
+        {
+          "name": "r1_g",
+          "observed": 93.49514285714285,
+          "expected": 93.4951,
+          "atol": 0.00051,
+          "rtol": 0.0,
+          "error": 4.285714285856557e-05,
+          "tolerance": 0.00051,
+          "passed": true
+        },
+        {
+          "name": "r2_g",
+          "observed": 717.2742857142857,
+          "expected": 717.274,
+          "atol": 0.00051,
+          "rtol": 0.0,
+          "error": 0.00028571428572377044,
+          "tolerance": 0.00051,
+          "passed": true
+        }
+      ],
+      "notes": [
+        "Table 4.1 values are printed to 0.001 g; table 4.2 uses higher-precision source readings. Gate tolerance is the explicit printed-data rounding envelope, not a numerical-fit tolerance."
+      ]
+    },
+    {
+      "example": 5,
+      "title": "Greenhouse gas emission inventories",
+      "gate_scope": "published emissions-total arithmetic model from rounded table 5.1",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "component_1_kt",
+          "observed": 4220.365329752,
+          "expected": 4220.2623,
+          "atol": 0.11,
+          "rtol": 0.0,
+          "error": 0.10302975200011133,
+          "tolerance": 0.11,
+          "passed": true
+        },
+        {
+          "name": "component_2_kt",
+          "observed": 4.979557274639999,
+          "expected": 4.9795,
+          "atol": 0.001,
+          "rtol": 0.0,
+          "error": 5.7274639999604915e-05,
+          "tolerance": 0.001,
+          "passed": true
+        },
+        {
+          "name": "component_3_kt",
+          "observed": 51.99887760013439,
+          "expected": 51.9987,
+          "atol": 0.003,
+          "rtol": 0.0,
+          "error": 0.00017760013439271916,
+          "tolerance": 0.003,
+          "passed": true
+        },
+        {
+          "name": "component_4_kt",
+          "observed": 4.7118828943999995,
+          "expected": 4.712,
+          "atol": 0.001,
+          "rtol": 0.0,
+          "error": 0.00011710560000022241,
+          "tolerance": 0.001,
+          "passed": true
+        },
+        {
+          "name": "component_5_kt",
+          "observed": 0.08172120456,
+          "expected": 0.0817,
+          "atol": 0.001,
+          "rtol": 0.0,
+          "error": 2.1204560000001593e-05,
+          "tolerance": 0.001,
+          "passed": true
+        },
+        {
+          "name": "component_6_kt",
+          "observed": 0.006722755068864,
+          "expected": 0.0067,
+          "atol": 0.001,
+          "rtol": 0.0,
+          "error": 2.2755068863999743e-05,
+          "tolerance": 0.001,
+          "passed": true
+        },
+        {
+          "name": "total_CO2e_kt",
+          "observed": 4282.1440914808045,
+          "expected": 4282.0409,
+          "atol": 0.11,
+          "rtol": 0.0,
+          "error": 0.10319148080452578,
+          "tolerance": 0.11,
+          "passed": true
+        }
+      ],
+      "notes": [
+        "Gate tolerance propagates the printed input rounding in table 5.1; it is not an adjustable fit tolerance."
+      ]
+    },
+    {
+      "example": 6,
+      "title": "Simple linear measurement models",
+      "gate_scope": "all three published subcases 6.2\u20136.4",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "normal_u",
+          "observed": 2.0,
+          "expected": 2.0,
+          "atol": 1e-12,
+          "rtol": 0.0,
+          "error": 0.0,
+          "tolerance": 1e-12,
+          "passed": true
+        },
+        {
+          "name": "rect_equal_u",
+          "observed": 2.0,
+          "expected": 2.0,
+          "atol": 1e-12,
+          "rtol": 0.0,
+          "error": 0.0,
+          "tolerance": 1e-12,
+          "passed": true
+        },
+        {
+          "name": "rect_equal_analytic_95_endpoint",
+          "observed": 3.879406741347821,
+          "expected": 3.88,
+          "atol": 0.01,
+          "rtol": 0.0,
+          "error": 0.0005932586521790739,
+          "tolerance": 0.01,
+          "passed": true
+        },
+        {
+          "name": "rect_unequal_u",
+          "observed": 10.14889156509222,
+          "expected": 10.1,
+          "atol": 0.05,
+          "rtol": 0.0,
+          "error": 0.04889156509221948,
+          "tolerance": 0.05,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 7,
+      "title": "Second-order effects in nonlinear weight calibration",
+      "gate_scope": "full compact GUF1/GUF2 model",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "estimate",
+          "observed": 1.2339999999967404,
+          "expected": 1.234,
+          "atol": 5e-05,
+          "rtol": 0.0,
+          "error": 3.2596148002994596e-12,
+          "tolerance": 5e-05,
+          "passed": true
+        },
+        {
+          "name": "u_first",
+          "observed": 0.05385164807134505,
+          "expected": 0.0539,
+          "atol": 5e-05,
+          "rtol": 0.0,
+          "error": 4.835192865495358e-05,
+          "tolerance": 5e-05,
+          "passed": true
+        },
+        {
+          "name": "u_second",
+          "observed": 0.07491822586721311,
+          "expected": 0.075,
+          "atol": 0.0002,
+          "rtol": 0.0,
+          "error": 8.177413278688539e-05,
+          "tolerance": 0.0002,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 8,
+      "title": "Gauge block calibration",
+      "gate_scope": "published model-center regression; full distributional MCM retained for later specialist expansion",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "delta_L_nm",
+          "observed": 838.0,
+          "expected": 838.0,
+          "atol": 1e-12,
+          "rtol": 0.0,
+          "error": 0.0,
+          "tolerance": 1e-12,
+          "passed": true
+        }
+      ],
+      "notes": [
+        "Published GUF u=32 nm and MCM u=36 nm are source oracles, but this gate recomputes the central model only."
+      ]
+    },
+    {
+      "example": 9,
+      "title": "Least-squares versus Bayesian torque calibration",
+      "gate_scope": "published OLS/WLS submodels",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "OLS_beta",
+          "observed": 1.0106544704961367,
+          "expected": 1.0107,
+          "atol": 7e-05,
+          "rtol": 0.0,
+          "error": 4.5529503863273035e-05,
+          "tolerance": 7e-05,
+          "passed": true
+        },
+        {
+          "name": "WLS_beta",
+          "observed": 1.0084948133864824,
+          "expected": 1.0085,
+          "atol": 7e-05,
+          "rtol": 0.0,
+          "error": 5.1866135175604455e-06,
+          "tolerance": 7e-05,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 10,
+      "title": "Conformity assessment of TSPM",
+      "gate_scope": "specific producer-risk Bayesian submodel",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "producer_risk",
+          "observed": 0.11334035551678562,
+          "expected": 0.11,
+          "atol": 0.006,
+          "rtol": 0.0,
+          "error": 0.0033403555167856175,
+          "tolerance": 0.006,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 11,
+      "title": "Effect of considering a 2D image as pixels",
+      "gate_scope": "published inner/outer-profile bounding submodel",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "area_mean",
+          "observed": 66.0,
+          "expected": 66.0,
+          "atol": 1e-12,
+          "rtol": 0.0,
+          "error": 0.0,
+          "tolerance": 1e-12,
+          "passed": true
+        },
+        {
+          "name": "rectangular_standard_uncertainty",
+          "observed": 10.96965511460289,
+          "expected": 11.0,
+          "atol": 0.05,
+          "rtol": 0.0,
+          "error": 0.030344885397109778,
+          "tolerance": 0.05,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 12,
+      "title": "Between-bottle homogeneity of reference materials",
+      "gate_scope": "classical ANOVA precursor to Bayesian example",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "SS_between",
+          "observed": 2.9236528800002035e-06,
+          "expected": 2.92e-06,
+          "atol": 1e-08,
+          "rtol": 0.0,
+          "error": 3.6528800002035273e-09,
+          "tolerance": 1e-08,
+          "passed": true
+        },
+        {
+          "name": "SS_within",
+          "observed": 1.9615148800000134e-05,
+          "expected": 1.96e-05,
+          "atol": 1e-07,
+          "rtol": 0.0,
+          "error": 1.5148800000135593e-08,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "name": "MS_between",
+          "observed": 3.248503200000226e-07,
+          "expected": 3.25e-07,
+          "atol": 2e-09,
+          "rtol": 0.0,
+          "error": 1.4967999997740995e-10,
+          "tolerance": 2e-09,
+          "passed": true
+        },
+        {
+          "name": "MS_within",
+          "observed": 4.903787200000034e-07,
+          "expected": 4.9e-07,
+          "atol": 3e-09,
+          "rtol": 0.0,
+          "error": 3.78720000003411e-10,
+          "tolerance": 3e-09,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 13,
+      "title": "Celsius temperature using a resistance thermometer",
+      "gate_scope": "full single-temperature implicit model",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "temperature_C",
+          "observed": 20.023170303450218,
+          "expected": 20.0232,
+          "atol": 5e-05,
+          "rtol": 0.0,
+          "error": 2.9696549781021986e-05,
+          "tolerance": 5e-05,
+          "passed": true
+        },
+        {
+          "name": "standard_uncertainty_C",
+          "observed": 0.004482428182633166,
+          "expected": 0.0045,
+          "atol": 5e-05,
+          "rtol": 0.0,
+          "error": 1.7571817366834018e-05,
+          "tolerance": 5e-05,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 14,
+      "title": "Activity of a radioactive source corrected for decay",
+      "gate_scope": "full compact first-order model",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "activity_kBq",
+          "observed": 10.810017622206207,
+          "expected": 10.81,
+          "atol": 0.0006,
+          "rtol": 0.0,
+          "error": 1.7622206206269198e-05,
+          "tolerance": 0.0006,
+          "passed": true
+        },
+        {
+          "name": "standard_uncertainty_kBq",
+          "observed": 0.05411420831266128,
+          "expected": 0.054,
+          "atol": 0.0006,
+          "rtol": 0.0,
+          "error": 0.00011420831266128334,
+          "tolerance": 0.0006,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 15,
+      "title": "Breaking force of steel wire rope",
+      "gate_scope": "GUF mean/combined-standard/expanded uncertainty model",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "mean_kN",
+          "observed": 10005.666666666666,
+          "expected": 10005.7,
+          "atol": 0.04,
+          "rtol": 0.0,
+          "error": 0.03333333333466726,
+          "tolerance": 0.04,
+          "passed": true
+        },
+        {
+          "name": "u_mean_kN",
+          "observed": 0.7149203529842406,
+          "expected": 0.7,
+          "atol": 0.05,
+          "rtol": 0.0,
+          "error": 0.014920352984240659,
+          "tolerance": 0.05,
+          "passed": true
+        },
+        {
+          "name": "combined_u_kN",
+          "observed": 9.912001703882913,
+          "expected": 9.9,
+          "atol": 0.08,
+          "rtol": 0.0,
+          "error": 0.012001703882912551,
+          "tolerance": 0.08,
+          "passed": true
+        },
+        {
+          "name": "expanded_U95_kN",
+          "observed": 19.42752333961051,
+          "expected": 19.4,
+          "atol": 0.08,
+          "rtol": 0.0,
+          "error": 0.02752333961051079,
+          "tolerance": 0.08,
+          "passed": true
+        }
+      ],
+      "notes": []
+    },
+    {
+      "example": 16,
+      "title": "Comparison loss in microwave power meter calibration",
+      "gate_scope": "analytic quadratic normal-moment submodel",
+      "status": "PASS",
+      "checks": [
+        {
+          "name": "r0_mean",
+          "observed": 5e-05,
+          "expected": 5e-05,
+          "atol": 1e-07,
+          "rtol": 0.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "name": "r0_u",
+          "observed": 5e-05,
+          "expected": 5e-05,
+          "atol": 1e-07,
+          "rtol": 0.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "name": "r09_mean",
+          "observed": 5e-05,
+          "expected": 5e-05,
+          "atol": 1e-07,
+          "rtol": 0.0,
+          "error": 0.0,
+          "tolerance": 1e-07,
+          "passed": true
+        },
+        {
+          "name": "r09_u",
+          "observed": 6.726812023536856e-05,
+          "expected": 6.7e-05,
+          "atol": 5e-07,
+          "rtol": 0.0,
+          "error": 2.681202353685549e-07,
+          "tolerance": 5e-07,
+          "passed": true
+        }
+      ],
+      "notes": []
+    }
+  ],
+  "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation."
+}

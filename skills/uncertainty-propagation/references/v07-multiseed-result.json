@@ -1,0 +1,260 @@
+{
+  "status": "PASS",
+  "runs": [
+    {
+      "seed": 1,
+      "status": "PASS",
+      "rows": [
+        {
+          "name": "parent_v06_release_gate",
+          "status": "PASS"
+        },
+        {
+          "name": "model_adequacy_fail_closed",
+          "status": "PASS"
+        },
+        {
+          "name": "rare_event_reliability",
+          "status": "PASS"
+        },
+        {
+          "name": "validated_surrogates",
+          "status": "PASS"
+        },
+        {
+          "name": "bayesian_calibration_with_discrepancy",
+          "status": "PASS"
+        },
+        {
+          "name": "conformity_and_decision_risk",
+          "status": "PASS"
+        }
+      ],
+      "rare_event": {
+        "FORM": 3.167124183311986e-05,
+        "exact4": 3.167124183311986e-05,
+        "IS": 3.161868795194291e-05,
+        "IS_se": 2.7367704640553977e-07,
+        "subset_ratio_to_exact": 0.9697841771773874
+      },
+      "calibration": {
+        "exact_mean": 0.9818181818181818,
+        "mcmc_mean": 0.9752923536083146,
+        "exact_sd": 0.17407765595569785,
+        "mcmc_sd": 0.17463764449202984,
+        "discrepancy_sd": 0.20190935117306252,
+        "diagnostics": "QUALIFIED"
+      },
+      "conformity": {
+        "guard_width": 0.3919927969080108,
+        "boundary_risk": 0.025000000000000244,
+        "item_consumer_risk": 0.006209665325776159,
+        "global_consumer_risk": 0.00745
+      }
+    },
+    {
+      "seed": 1729,
+      "status": "PASS",
+      "rows": [
+        {
+          "name": "parent_v06_release_gate",
+          "status": "PASS"
+        },
+        {
+          "name": "model_adequacy_fail_closed",
+          "status": "PASS"
+        },
+        {
+          "name": "rare_event_reliability",
+          "status": "PASS"
+        },
+        {
+          "name": "validated_surrogates",
+          "status": "PASS"
+        },
+        {
+          "name": "bayesian_calibration_with_discrepancy",
+          "status": "PASS"
+        },
+        {
+          "name": "conformity_and_decision_risk",
+          "status": "PASS"
+        }
+      ],
+      "rare_event": {
+        "FORM": 3.167124183311986e-05,
+        "exact4": 3.167124183311986e-05,
+        "IS": 3.1750325464038653e-05,
+        "IS_se": 2.7555196303699525e-07,
+        "subset_ratio_to_exact": 1.067221121692846
+      },
+      "calibration": {
+        "exact_mean": 0.9818181818181818,
+        "mcmc_mean": 0.9767566609822501,
+        "exact_sd": 0.17407765595569785,
+        "mcmc_sd": 0.17206788239139387,
+        "discrepancy_sd": 0.20190935117306252,
+        "diagnostics": "QUALIFIED"
+      },
+      "conformity": {
+        "guard_width": 0.3919927969080108,
+        "boundary_risk": 0.025000000000000244,
+        "item_consumer_risk": 0.006209665325776159,
+        "global_consumer_risk": 0.007266666666666667
+      }
+    },
+    {
+      "seed": 20261005,
+      "status": "PASS",
+      "rows": [
+        {
+          "name": "parent_v06_release_gate",
+          "status": "PASS"
+        },
+        {
+          "name": "model_adequacy_fail_closed",
+          "status": "PASS"
+        },
+        {
+          "name": "rare_event_reliability",
+          "status": "PASS"
+        },
+        {
+          "name": "validated_surrogates",
+          "status": "PASS"
+        },
+        {
+          "name": "bayesian_calibration_with_discrepancy",
+          "status": "PASS"
+        },
+        {
+          "name": "conformity_and_decision_risk",
+          "status": "PASS"
+        }
+      ],
+      "rare_event": {
+        "FORM": 3.167124183311986e-05,
+        "exact4": 3.167124183311986e-05,
+        "IS": 3.2107842719939644e-05,
+        "IS_se": 2.770309789847334e-07,
+        "subset_ratio_to_exact": 0.9405530938227498
+      },
+      "calibration": {
+        "exact_mean": 0.9818181818181818,
+        "mcmc_mean": 0.9905614539306715,
+        "exact_sd": 0.17407765595569785,
+        "mcmc_sd": 0.17274050752152925,
+        "discrepancy_sd": 0.20190935117306252,
+        "diagnostics": "QUALIFIED"
+      },
+      "conformity": {
+        "guard_width": 0.3919927969080108,
+        "boundary_risk": 0.025000000000000244,
+        "item_consumer_risk": 0.006209665325776159,
+        "global_consumer_risk": 0.007116666666666667
+      }
+    },
+    {
+      "seed": 8675309,
+      "status": "PASS",
+      "rows": [
+        {
+          "name": "parent_v06_release_gate",
+          "status": "PASS"
+        },
+        {
+          "name": "model_adequacy_fail_closed",
+          "status": "PASS"
+        },
+        {
+          "name": "rare_event_reliability",
+          "status": "PASS"
+        },
+        {
+          "name": "validated_surrogates",
+          "status": "PASS"
+        },
+        {
+          "name": "bayesian_calibration_with_discrepancy",
+          "status": "PASS"
+        },
+        {
+          "name": "conformity_and_decision_risk",
+          "status": "PASS"
+        }
+      ],
+      "rare_event": {
+        "FORM": 3.167124183311986e-05,
+        "exact4": 3.167124183311986e-05,
+        "IS": 3.118532230018391e-05,
+        "IS_se": 2.731306019952971e-07,
+        "subset_ratio_to_exact": 0.7726176541578712
+      },
+      "calibration": {
+        "exact_mean": 0.9818181818181818,
+        "mcmc_mean": 0.982469362616738,
+        "exact_sd": 0.17407765595569785,
+        "mcmc_sd": 0.18058524079940486,
+        "discrepancy_sd": 0.20190935117306252,
+        "diagnostics": "QUALIFIED"
+      },
+      "conformity": {
+        "guard_width": 0.3919927969080108,
+        "boundary_risk": 0.025000000000000244,
+        "item_consumer_risk": 0.006209665325776159,
+        "global_consumer_risk": 0.007216666666666666
+      }
+    },
+    {
+      "seed": 2147483647,
+      "status": "PASS",
+      "rows": [
+        {
+          "name": "parent_v06_release_gate",
+          "status": "PASS"
+        },
+        {
+          "name": "model_adequacy_fail_closed",
+          "status": "PASS"
+        },
+        {
+          "name": "rare_event_reliability",
+          "status": "PASS"
+        },
+        {
+          "name": "validated_surrogates",
+          "status": "PASS"
+        },
+        {
+          "name": "bayesian_calibration_with_discrepancy",
+          "status": "PASS"
+        },
+        {
+          "name": "conformity_and_decision_risk",
+          "status": "PASS"
+        }
+      ],
+      "rare_event": {
+        "FORM": 3.167124183311986e-05,
+        "exact4": 3.167124183311986e-05,
+        "IS": 3.16037440541954e-05,
+        "IS_se": 2.7448733914197003e-07,
+        "subset_ratio_to_exact": 0.9829668226118319
+      },
+      "calibration": {
+        "exact_mean": 0.9818181818181818,
+        "mcmc_mean": 0.9756719261740585,
+        "exact_sd": 0.17407765595569785,
+        "mcmc_sd": 0.1762243135504366,
+        "discrepancy_sd": 0.20190935117306252,
+        "diagnostics": "QUALIFIED"
+      },
+      "conformity": {
+        "guard_width": 0.3919927969080108,
+        "boundary_risk": 0.025000000000000244,
+        "item_consumer_risk": 0.006209665325776159,
+        "global_consumer_risk": 0.0078
+      }
+    }
+  ]
+}

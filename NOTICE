@@ -1,0 +1,14 @@
+Uncertainty Lab
+Copyright 2026 Rajat Aggarwal
+
+Licensed under the Apache License, Version 2.0.
+
+Uncertainty Lab depends at runtime on independently distributed open-source
+packages including NumPy, SciPy, SymPy, and mpmath. Those packages are not
+vendored in this repository and remain subject to their respective licenses.
+See THIRD_PARTY_NOTICES.md.
+
+Names of standards bodies, software projects, companies, products, and services
+referenced in documentation or benchmarks are used only for identification,
+interoperability, attribution, or comparison. No endorsement, sponsorship, or
+affiliation is implied.

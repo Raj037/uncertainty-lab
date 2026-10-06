@@ -1,0 +1,112 @@
+[
+  {
+    "rows": [
+      {
+        "name": "parent_v09_release_gate",
+        "status": "PASS"
+      },
+      {
+        "name": "structural_model_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "robust_decision_under_model_weight_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "nonlinear_complex_propagation",
+        "status": "PASS"
+      }
+    ],
+    "seed": 1,
+    "status": "PASS"
+  },
+  {
+    "rows": [
+      {
+        "name": "parent_v09_release_gate",
+        "status": "PASS"
+      },
+      {
+        "name": "structural_model_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "robust_decision_under_model_weight_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "nonlinear_complex_propagation",
+        "status": "PASS"
+      }
+    ],
+    "seed": 1729,
+    "status": "PASS"
+  },
+  {
+    "rows": [
+      {
+        "name": "parent_v09_release_gate",
+        "status": "PASS"
+      },
+      {
+        "name": "structural_model_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "robust_decision_under_model_weight_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "nonlinear_complex_propagation",
+        "status": "PASS"
+      }
+    ],
+    "seed": 20261005,
+    "status": "PASS"
+  },
+  {
+    "rows": [
+      {
+        "name": "parent_v09_release_gate",
+        "status": "PASS"
+      },
+      {
+        "name": "structural_model_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "robust_decision_under_model_weight_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "nonlinear_complex_propagation",
+        "status": "PASS"
+      }
+    ],
+    "seed": 8675309,
+    "status": "PASS"
+  },
+  {
+    "rows": [
+      {
+        "name": "parent_v09_release_gate",
+        "status": "PASS"
+      },
+      {
+        "name": "structural_model_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "robust_decision_under_model_weight_uncertainty",
+        "status": "PASS"
+      },
+      {
+        "name": "nonlinear_complex_propagation",
+        "status": "PASS"
+      }
+    ],
+    "seed": 2147483647,
+    "status": "PASS"
+  }
+]

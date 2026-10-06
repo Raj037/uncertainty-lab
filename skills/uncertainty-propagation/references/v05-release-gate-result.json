@@ -1,0 +1,91 @@
+{
+  "engine_version": "0.5.0",
+  "gate": "v0.5_cross_capability_release_gate",
+  "status": "PASS",
+  "seed": 20261005,
+  "rows": [
+    {
+      "name": "gum5_multiseed",
+      "status": "PASS",
+      "evidence": [
+        {
+          "seed": 1,
+          "status": "PASS"
+        },
+        {
+          "seed": 1729,
+          "status": "PASS"
+        },
+        {
+          "seed": 20261005,
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "name": "three_engine_extreme_rescaling",
+      "status": "PASS",
+      "evidence": {
+        "cases": 150,
+        "failures": 0,
+        "scale_per_axis": "10^-20..10^20"
+      }
+    },
+    {
+      "name": "correlated_nongaussian_joint",
+      "status": "PASS",
+      "evidence": {
+        "n": 120000,
+        "invalid_fraction": 0.0,
+        "joint_kind": "t_copula"
+      }
+    },
+    {
+      "name": "structured_covariance_12k",
+      "status": "PASS",
+      "evidence": {
+        "input_dimension": 12000,
+        "representation": "sparse_factor"
+      }
+    },
+    {
+      "name": "gaussian_joint_coverage",
+      "status": "PASS",
+      "evidence": {
+        "empirical_containment": 0.94935,
+        "target": 0.95,
+        "n": 100000
+      }
+    },
+    {
+      "name": "explicit_timeseries_dependence",
+      "status": "PASS",
+      "evidence": {
+        "iid_u": 0.01620232712884185,
+        "ar1_u": 0.039887801142208114,
+        "phi": 0.72
+      }
+    },
+    {
+      "name": "nonlinear_sensitivity_attribution",
+      "status": "PASS",
+      "evidence": {
+        "sobol_first": [
+          0.199225490412096,
+          0.8033012856346847
+        ],
+        "shapley": [
+          0.5434847787412649,
+          0.4565152212587352
+        ],
+        "shapley_sum": 1.0
+      }
+    },
+    {
+      "name": "tiny_indefinite_fail_closed",
+      "status": "PASS",
+      "evidence": null
+    }
+  ],
+  "claim_boundary": "This gate verifies the encoded software capabilities and six official GUM-5 hard gates; it is not formal metrology accreditation or proof of a user-supplied scientific model."
+}

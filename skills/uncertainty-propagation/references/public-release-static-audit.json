@@ -1,0 +1,234 @@
+{
+  "cache_or_compiled_artifacts": [],
+  "dynamic_imports": [
+    {
+      "file": "skills/uncertainty-propagation/assets/v05_engine.py",
+      "line": 32,
+      "module": "scipy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v05_engine.py",
+      "line": 32,
+      "module": "sympy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v06_engine.py",
+      "line": 59,
+      "module": "joint_distribution_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v06_engine.py",
+      "line": 60,
+      "module": "autodiff_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v06_engine.py",
+      "line": 61,
+      "module": "verification_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v06_engine.py",
+      "line": 93,
+      "module": "scipy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v06_engine.py",
+      "line": 94,
+      "module": "sympy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v07_engine.py",
+      "line": 35,
+      "module": "v06_release_gate",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v07_engine.py",
+      "line": 35,
+      "module": "joint_distribution_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v07_engine.py",
+      "line": 35,
+      "module": "autodiff_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v07_engine.py",
+      "line": 35,
+      "module": "posterior_diagnostics",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v07_engine.py",
+      "line": 47,
+      "module": "scipy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v07_engine.py",
+      "line": 47,
+      "module": "sympy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v08_engine.py",
+      "line": 27,
+      "module": "v07_release_gate",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v08_engine.py",
+      "line": 27,
+      "module": "reliability_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v08_engine.py",
+      "line": 27,
+      "module": "surrogate_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v08_engine.py",
+      "line": 27,
+      "module": "calibration_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v08_engine.py",
+      "line": 36,
+      "module": "scipy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v08_engine.py",
+      "line": 36,
+      "module": "sympy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v09_engine.py",
+      "line": 27,
+      "module": "v08_release_gate",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v09_engine.py",
+      "line": 27,
+      "module": "hmc_nuts_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v09_engine.py",
+      "line": 27,
+      "module": "experimental_design_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v09_engine.py",
+      "line": 27,
+      "module": "system_reliability_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v09_engine.py",
+      "line": 27,
+      "module": "joint_distribution_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v09_engine.py",
+      "line": 36,
+      "module": "scipy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v09_engine.py",
+      "line": 36,
+      "module": "sympy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 23,
+      "module": "v09_release_gate",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 23,
+      "module": "constrained_nuts_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 23,
+      "module": "pbox_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 23,
+      "module": "time_reliability_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 23,
+      "module": "boolean_system_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 23,
+      "module": "multifidelity_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 23,
+      "module": "global_design_engine",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 32,
+      "module": "scipy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/v10_engine.py",
+      "line": 32,
+      "module": "sympy",
+      "review": "SAFE_LITERAL_BUNDLED_OR_RUNTIME_MODULE"
+    }
+  ],
+  "embedded_credential_hits": [],
+  "eval_exec_calls": [],
+  "network_client_imports": [],
+  "note": "Literal __import__ calls are restricted to bundled engine modules or scipy/sympy version/provenance reads; no user-controlled module name is passed to __import__.",
+  "python_files_scanned": 94,
+  "reference_urls_in_python": [
+    {
+      "file": "skills/uncertainty-propagation/assets/gum5_benchmarks.py",
+      "url": "https://www.bipm.org/en/committees/jc/jcgm/publications"
+    },
+    {
+      "file": "skills/uncertainty-propagation/assets/gum5_full_benchmarks.py",
+      "url": "https://www.bipm.org/en/committees/jc/jcgm/publications"
+    }
+  ],
+  "status": "PASS",
+  "subprocess_imports": [],
+  "symlinks": [],
+  "unreviewed_dynamic_imports": []
+}

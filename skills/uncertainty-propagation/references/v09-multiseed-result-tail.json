@@ -1,0 +1,816 @@
+[
+  {
+    "claim_boundary": "This verifies the encoded v0.9 plugin-only scope plus the complete v0.8 parent release gate; it is not formal accreditation or proof that all epistemic/model uncertainty has been captured.",
+    "engine_version": "0.9.0",
+    "gate": "v0.9_integrated_release_gate",
+    "rows": [
+      {
+        "evidence": {
+          "rows": [
+            {
+              "evidence": {
+                "rows": [
+                  {
+                    "evidence": {
+                      "rows": [
+                        {
+                          "evidence": {
+                            "rows": [
+                              {
+                                "evidence": [
+                                  {
+                                    "seed": 1,
+                                    "status": "PASS"
+                                  },
+                                  {
+                                    "seed": 1729,
+                                    "status": "PASS"
+                                  },
+                                  {
+                                    "seed": 8675309,
+                                    "status": "PASS"
+                                  }
+                                ],
+                                "name": "gum5_multiseed",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "cases": 150,
+                                  "failures": 0,
+                                  "scale_per_axis": "10^-20..10^20"
+                                },
+                                "name": "three_engine_extreme_rescaling",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "invalid_fraction": 0.0,
+                                  "joint_kind": "t_copula",
+                                  "n": 120000
+                                },
+                                "name": "correlated_nongaussian_joint",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "input_dimension": 12000,
+                                  "representation": "sparse_factor"
+                                },
+                                "name": "structured_covariance_12k",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "empirical_containment": 0.94966,
+                                  "n": 100000,
+                                  "target": 0.95
+                                },
+                                "name": "gaussian_joint_coverage",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "ar1_u": 0.04014407120123599,
+                                  "iid_u": 0.016189482968389148,
+                                  "phi": 0.72
+                                },
+                                "name": "explicit_timeseries_dependence",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "shapley": [
+                                    0.5209417009865132,
+                                    0.47905829901348684
+                                  ],
+                                  "shapley_sum": 1.0,
+                                  "sobol_first": [
+                                    0.19852535236224908,
+                                    0.7985607901443356
+                                  ]
+                                },
+                                "name": "nonlinear_sensitivity_attribution",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": null,
+                                "name": "tiny_indefinite_fail_closed",
+                                "status": "PASS"
+                              }
+                            ],
+                            "status": "PASS"
+                          },
+                          "name": "parent_v05_release_gate",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "case_statuses": [
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS"
+                            ],
+                            "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation.",
+                            "status": "PASS"
+                          },
+                          "name": "gum5_all_16_examples",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "ceiling_n": 40000,
+                            "ceiling_status": "NOT_CONVERGED",
+                            "converged_n": 40000,
+                            "converged_status": "CONVERGED"
+                          },
+                          "name": "adaptive_mc_convergence_and_stop",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "cancellation": "FLOAT_DISAGREEMENT",
+                            "exp_interval": [
+                              1.0,
+                              2.7182818284590455
+                            ],
+                            "ordinary": "PASS"
+                          },
+                          "name": "precision_escalation",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "effects": [
+                              0.4980753056051541,
+                              0.501924694394846
+                            ],
+                            "quality": "STABLE",
+                            "standard_error": [
+                              0.0032594156457241147,
+                              0.0032594156457241064
+                            ]
+                          },
+                          "name": "correlated_nongaussian_shapley",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "bad_rhat": 1.2061712056006813,
+                            "bad_status": "NOT_QUALIFIED",
+                            "good_max_rhat": 1.000563149199695,
+                            "good_status": "QUALIFIED"
+                          },
+                          "name": "posterior_chain_diagnostics",
+                          "status": "PASS"
+                        }
+                      ],
+                      "status": "PASS"
+                    },
+                    "name": "parent_v06_release_gate",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "bad_p": 2.058245724902922e-167,
+                      "good": "ADEQUACY_NOT_REJECTED_NOT_PROVEN",
+                      "unresolved": "ADEQUACY_UNRESOLVED"
+                    },
+                    "name": "model_adequacy_fail_closed",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "FORM": 3.167124183311986e-05,
+                      "IS": 3.118532230018391e-05,
+                      "IS_se": 2.731306019952971e-07,
+                      "exact4": 3.167124183311986e-05,
+                      "subset_ratio_to_exact": 0.7726176541578712
+                    },
+                    "name": "rare_event_reliability",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "GP_r2": 0.9999999999996644,
+                      "PCE_rmse": 1.9154922806051923e-15,
+                      "PCE_var": 2.1333333333333315
+                    },
+                    "name": "validated_surrogates",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "diagnostics": "QUALIFIED",
+                      "discrepancy_sd": 0.20190935117306252,
+                      "exact_mean": 0.9818181818181818,
+                      "exact_sd": 0.17407765595569785,
+                      "mcmc_mean": 0.982469362616738,
+                      "mcmc_sd": 0.18058524079940486
+                    },
+                    "name": "bayesian_calibration_with_discrepancy",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "boundary_risk": 0.025000000000000244,
+                      "global_consumer_risk": 0.007216666666666666,
+                      "guard_width": 0.3919927969080108,
+                      "item_consumer_risk": 0.006209665325776159
+                    },
+                    "name": "conformity_and_decision_risk",
+                    "status": "PASS"
+                  }
+                ],
+                "status": "PASS"
+              },
+              "name": "parent_v07_release_gate",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "directional": 0.04971428571429521,
+                "directional_se": 0.0008630747123997778,
+                "qmc": 0.050008138020833336,
+                "qmc_se": 2.5734681479234864e-05
+              },
+              "name": "non_gaussian_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "diagnostics": "QUALIFIED",
+                "divergences": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "exact_mean": 0.9818181818181818,
+                "exact_sd": 0.17407765595569785,
+                "mean": 0.9886682894688008,
+                "sd": 0.1701090438847091
+              },
+              "name": "nuts_calibration",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "confounded_fraction": 1.0,
+                "confounded_status": "POSTERIOR_PROVISIONAL_IDENTIFIABILITY",
+                "tau": 0.310114667716029,
+                "theta": 1.1286821345289166
+              },
+              "name": "joint_discrepancy_identifiability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "interval": [
+                  0.0009765625,
+                  0.0009765625
+                ],
+                "new_evaluations": 0,
+                "pf": 0.0009765625,
+                "status": "RELIABILITY_CONVERGED"
+              },
+              "name": "active_learning_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "pce_covariance": [
+                  [
+                    2.0000000000000027,
+                    2.0000000000000004
+                  ],
+                  [
+                    2.0000000000000004,
+                    3.999999999999999
+                  ]
+                ],
+                "series_exact": 0.044982695392698835,
+                "series_pf": 0.045064290364583336
+              },
+              "name": "multioutput_and_system_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "batch": [
+                  "a",
+                  "b"
+                ],
+                "batch_information_gain": 5.304540972073923,
+                "information_best": "a",
+                "target_best": "b"
+              },
+              "name": "experimental_design_value_of_information",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        },
+        "name": "parent_v08_release_gate",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "diagnostics": "QUALIFIED",
+          "divergences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mean": 1.0003973658068228
+        },
+        "name": "constrained_nuts",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "lower": 0.15865525393149765,
+          "upper": 0.841344746062254
+        },
+        "name": "epistemic_pbox",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "estimate": 0.3180857142857143,
+          "exact": 0.31731050786291415,
+          "se": 0.0017603051385365032
+        },
+        "name": "time_dependent_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "cut_sets": [
+            [
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "exact": 0.15865525393145707,
+          "pf": 0.15933333333333333,
+          "se": 0.0010565124317860716
+        },
+        "name": "boolean_system_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "estimate": 0.016795014307187633,
+          "factor": 2.292044834149897,
+          "naive_se": 0.07229934544835426,
+          "se": 0.03154360000779373
+        },
+        "name": "multifidelity_uq",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "best_batch": {
+            "candidates": [
+              "a",
+              "b"
+            ],
+            "expected_information_gain_nats": 1.926279402057025,
+            "replicate_standard_error": 0.05434772824000543,
+            "score": 1.926279402057025,
+            "total_cost": 2.0
+          }
+        },
+        "name": "global_bayesian_experimental_design",
+        "status": "PASS"
+      }
+    ],
+    "seed": 8675309,
+    "status": "PASS"
+  },
+  {
+    "claim_boundary": "This verifies the encoded v0.9 plugin-only scope plus the complete v0.8 parent release gate; it is not formal accreditation or proof that all epistemic/model uncertainty has been captured.",
+    "engine_version": "0.9.0",
+    "gate": "v0.9_integrated_release_gate",
+    "rows": [
+      {
+        "evidence": {
+          "rows": [
+            {
+              "evidence": {
+                "rows": [
+                  {
+                    "evidence": {
+                      "rows": [
+                        {
+                          "evidence": {
+                            "rows": [
+                              {
+                                "evidence": [
+                                  {
+                                    "seed": 1,
+                                    "status": "PASS"
+                                  },
+                                  {
+                                    "seed": 1729,
+                                    "status": "PASS"
+                                  },
+                                  {
+                                    "seed": 2147483647,
+                                    "status": "PASS"
+                                  }
+                                ],
+                                "name": "gum5_multiseed",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "cases": 150,
+                                  "failures": 0,
+                                  "scale_per_axis": "10^-20..10^20"
+                                },
+                                "name": "three_engine_extreme_rescaling",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "invalid_fraction": 0.0,
+                                  "joint_kind": "t_copula",
+                                  "n": 120000
+                                },
+                                "name": "correlated_nongaussian_joint",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "input_dimension": 12000,
+                                  "representation": "sparse_factor"
+                                },
+                                "name": "structured_covariance_12k",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "empirical_containment": 0.94997,
+                                  "n": 100000,
+                                  "target": 0.95
+                                },
+                                "name": "gaussian_joint_coverage",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "ar1_u": 0.0400996717436288,
+                                  "iid_u": 0.016485566115006057,
+                                  "phi": 0.72
+                                },
+                                "name": "explicit_timeseries_dependence",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": {
+                                  "shapley": [
+                                    0.4968473920115045,
+                                    0.5031526079884955
+                                  ],
+                                  "shapley_sum": 1.0,
+                                  "sobol_first": [
+                                    0.20065974550236088,
+                                    0.8011118491676478
+                                  ]
+                                },
+                                "name": "nonlinear_sensitivity_attribution",
+                                "status": "PASS"
+                              },
+                              {
+                                "evidence": null,
+                                "name": "tiny_indefinite_fail_closed",
+                                "status": "PASS"
+                              }
+                            ],
+                            "status": "PASS"
+                          },
+                          "name": "parent_v05_release_gate",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "case_statuses": [
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS",
+                              "PASS"
+                            ],
+                            "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation.",
+                            "status": "PASS"
+                          },
+                          "name": "gum5_all_16_examples",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "ceiling_n": 40000,
+                            "ceiling_status": "NOT_CONVERGED",
+                            "converged_n": 40000,
+                            "converged_status": "CONVERGED"
+                          },
+                          "name": "adaptive_mc_convergence_and_stop",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "cancellation": "FLOAT_DISAGREEMENT",
+                            "exp_interval": [
+                              1.0,
+                              2.7182818284590455
+                            ],
+                            "ordinary": "PASS"
+                          },
+                          "name": "precision_escalation",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "effects": [
+                              0.5072781478813257,
+                              0.49272185211867425
+                            ],
+                            "quality": "STABLE",
+                            "standard_error": [
+                              0.0028263898526031373,
+                              0.0028263898526031317
+                            ]
+                          },
+                          "name": "correlated_nongaussian_shapley",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "bad_rhat": 1.2022341323422367,
+                            "bad_status": "NOT_QUALIFIED",
+                            "good_max_rhat": 1.000049638409555,
+                            "good_status": "QUALIFIED"
+                          },
+                          "name": "posterior_chain_diagnostics",
+                          "status": "PASS"
+                        }
+                      ],
+                      "status": "PASS"
+                    },
+                    "name": "parent_v06_release_gate",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "bad_p": 2.058245724902922e-167,
+                      "good": "ADEQUACY_NOT_REJECTED_NOT_PROVEN",
+                      "unresolved": "ADEQUACY_UNRESOLVED"
+                    },
+                    "name": "model_adequacy_fail_closed",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "FORM": 3.167124183311986e-05,
+                      "IS": 3.16037440541954e-05,
+                      "IS_se": 2.7448733914197003e-07,
+                      "exact4": 3.167124183311986e-05,
+                      "subset_ratio_to_exact": 0.9829668226118319
+                    },
+                    "name": "rare_event_reliability",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "GP_r2": 0.9999999999989498,
+                      "PCE_rmse": 2.0781729646134683e-15,
+                      "PCE_var": 2.1333333333333315
+                    },
+                    "name": "validated_surrogates",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "diagnostics": "QUALIFIED",
+                      "discrepancy_sd": 0.20190935117306252,
+                      "exact_mean": 0.9818181818181818,
+                      "exact_sd": 0.17407765595569785,
+                      "mcmc_mean": 0.9756719261740585,
+                      "mcmc_sd": 0.1762243135504366
+                    },
+                    "name": "bayesian_calibration_with_discrepancy",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "boundary_risk": 0.025000000000000244,
+                      "global_consumer_risk": 0.0078,
+                      "guard_width": 0.3919927969080108,
+                      "item_consumer_risk": 0.006209665325776159
+                    },
+                    "name": "conformity_and_decision_risk",
+                    "status": "PASS"
+                  }
+                ],
+                "status": "PASS"
+              },
+              "name": "parent_v07_release_gate",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "directional": 0.04853571428572356,
+                "directional_se": 0.0011269352213848702,
+                "qmc": 0.050028483072916664,
+                "qmc_se": 2.0345052083333336e-05
+              },
+              "name": "non_gaussian_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "diagnostics": "QUALIFIED",
+                "divergences": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "exact_mean": 0.9818181818181818,
+                "exact_sd": 0.17407765595569785,
+                "mean": 0.9840623847320321,
+                "sd": 0.16972753402498408
+              },
+              "name": "nuts_calibration",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "confounded_fraction": 1.0,
+                "confounded_status": "POSTERIOR_PROVISIONAL_IDENTIFIABILITY",
+                "tau": 0.29162216525296947,
+                "theta": 1.0737480121407164
+              },
+              "name": "joint_discrepancy_identifiability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "interval": [
+                  0.002197265625,
+                  0.002197265625
+                ],
+                "new_evaluations": 0,
+                "pf": 0.002197265625,
+                "status": "RELIABILITY_CONVERGED"
+              },
+              "name": "active_learning_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "pce_covariance": [
+                  [
+                    2.0000000000000018,
+                    2.0000000000000018
+                  ],
+                  [
+                    2.0000000000000018,
+                    4.0000000000000036
+                  ]
+                ],
+                "series_exact": 0.044982695392698835,
+                "series_pf": 0.045023600260416664
+              },
+              "name": "multioutput_and_system_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "batch": [
+                  "a",
+                  "b"
+                ],
+                "batch_information_gain": 5.304540972073923,
+                "information_best": "a",
+                "target_best": "b"
+              },
+              "name": "experimental_design_value_of_information",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        },
+        "name": "parent_v08_release_gate",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "diagnostics": "QUALIFIED",
+          "divergences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "mean": 0.9982662762870492
+        },
+        "name": "constrained_nuts",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "lower": 0.15865525393149765,
+          "upper": 0.841344746062254
+        },
+        "name": "epistemic_pbox",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "estimate": 0.31661428571428574,
+          "exact": 0.31731050786291415,
+          "se": 0.0017581226992607701
+        },
+        "name": "time_dependent_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "cut_sets": [
+            [
+              "A"
+            ],
+            [
+              "B",
+              "C"
+            ]
+          ],
+          "exact": 0.15865525393145707,
+          "pf": 0.15979166666666667,
+          "se": 0.001057742446323598
+        },
+        "name": "boolean_system_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "estimate": -0.0018401624599853723,
+          "factor": 2.397161049589566,
+          "naive_se": 0.0765717534246801,
+          "se": 0.031942682131344685
+        },
+        "name": "multifidelity_uq",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "best_batch": {
+            "candidates": [
+              "a",
+              "b"
+            ],
+            "expected_information_gain_nats": 2.0668049337331524,
+            "replicate_standard_error": 0.02257903835463854,
+            "score": 2.0668049337331524,
+            "total_cost": 2.0
+          }
+        },
+        "name": "global_bayesian_experimental_design",
+        "status": "PASS"
+      }
+    ],
+    "seed": 2147483647,
+    "status": "PASS"
+  }
+]

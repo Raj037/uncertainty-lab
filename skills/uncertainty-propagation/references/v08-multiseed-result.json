@@ -1,0 +1,1617 @@
+[
+  {
+    "claim_boundary": "This gate verifies the encoded v0.8 scope and complete v0.7 parent gate. It is not formal reliability/metrology accreditation, proof of model completeness, or proof of globally optimal experiment design.",
+    "engine_version": "0.8.0",
+    "gate": "v0.8_integrated_release_gate",
+    "rows": [
+      {
+        "evidence": {
+          "rows": [
+            {
+              "evidence": {
+                "rows": [
+                  {
+                    "evidence": {
+                      "rows": [
+                        {
+                          "evidence": [
+                            {
+                              "seed": 1,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 1729,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 1,
+                              "status": "PASS"
+                            }
+                          ],
+                          "name": "gum5_multiseed",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "cases": 150,
+                            "failures": 0,
+                            "scale_per_axis": "10^-20..10^20"
+                          },
+                          "name": "three_engine_extreme_rescaling",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "invalid_fraction": 0.0,
+                            "joint_kind": "t_copula",
+                            "n": 120000
+                          },
+                          "name": "correlated_nongaussian_joint",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "input_dimension": 12000,
+                            "representation": "sparse_factor"
+                          },
+                          "name": "structured_covariance_12k",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "empirical_containment": 0.95041,
+                            "n": 100000,
+                            "target": 0.95
+                          },
+                          "name": "gaussian_joint_coverage",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "ar1_u": 0.039689185319861424,
+                            "iid_u": 0.0161887441405218,
+                            "phi": 0.72
+                          },
+                          "name": "explicit_timeseries_dependence",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "shapley": [
+                              0.5058116894720076,
+                              0.4941883105279924
+                            ],
+                            "shapley_sum": 1.0,
+                            "sobol_first": [
+                              0.1981615733586776,
+                              0.7988694833928109
+                            ]
+                          },
+                          "name": "nonlinear_sensitivity_attribution",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": null,
+                          "name": "tiny_indefinite_fail_closed",
+                          "status": "PASS"
+                        }
+                      ],
+                      "status": "PASS"
+                    },
+                    "name": "parent_v05_release_gate",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "case_statuses": [
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS"
+                      ],
+                      "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation.",
+                      "status": "PASS"
+                    },
+                    "name": "gum5_all_16_examples",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "ceiling_n": 40000,
+                      "ceiling_status": "NOT_CONVERGED",
+                      "converged_n": 40000,
+                      "converged_status": "CONVERGED"
+                    },
+                    "name": "adaptive_mc_convergence_and_stop",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "cancellation": "FLOAT_DISAGREEMENT",
+                      "exp_interval": [
+                        1.0,
+                        2.7182818284590455
+                      ],
+                      "ordinary": "PASS"
+                    },
+                    "name": "precision_escalation",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "effects": [
+                        0.5019380691339158,
+                        0.49806193086608413
+                      ],
+                      "quality": "STABLE",
+                      "standard_error": [
+                        0.0067918253416628235,
+                        0.006791825341662823
+                      ]
+                    },
+                    "name": "correlated_nongaussian_shapley",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "bad_rhat": 1.2125102602813842,
+                      "bad_status": "NOT_QUALIFIED",
+                      "good_max_rhat": 1.000330283649248,
+                      "good_status": "QUALIFIED"
+                    },
+                    "name": "posterior_chain_diagnostics",
+                    "status": "PASS"
+                  }
+                ],
+                "status": "PASS"
+              },
+              "name": "parent_v06_release_gate",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "bad_p": 2.058245724902922e-167,
+                "good": "ADEQUACY_NOT_REJECTED_NOT_PROVEN",
+                "unresolved": "ADEQUACY_UNRESOLVED"
+              },
+              "name": "model_adequacy_fail_closed",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "FORM": 3.167124183311986e-05,
+                "IS": 3.161868795194291e-05,
+                "IS_se": 2.7367704640553977e-07,
+                "exact4": 3.167124183311986e-05,
+                "subset_ratio_to_exact": 0.9697841771773874
+              },
+              "name": "rare_event_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "GP_r2": 0.9999999999999776,
+                "PCE_rmse": 3.75710459141629e-15,
+                "PCE_var": 2.133333333333333
+              },
+              "name": "validated_surrogates",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "diagnostics": "QUALIFIED",
+                "discrepancy_sd": 0.20190935117306252,
+                "exact_mean": 0.9818181818181818,
+                "exact_sd": 0.17407765595569785,
+                "mcmc_mean": 0.9752923536083146,
+                "mcmc_sd": 0.17463764449202984
+              },
+              "name": "bayesian_calibration_with_discrepancy",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "boundary_risk": 0.025000000000000244,
+                "global_consumer_risk": 0.00745,
+                "guard_width": 0.3919927969080108,
+                "item_consumer_risk": 0.006209665325776159
+              },
+              "name": "conformity_and_decision_risk",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        },
+        "name": "parent_v07_release_gate",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "directional": 0.048642857142866425,
+          "directional_se": 0.0010375599318811933,
+          "qmc": 0.049967447916666664,
+          "qmc_se": 2.5734681479234864e-05
+        },
+        "name": "non_gaussian_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "diagnostics": "QUALIFIED",
+          "divergences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "exact_mean": 0.9818181818181818,
+          "exact_sd": 0.17407765595569785,
+          "mean": 0.9780751302801421,
+          "sd": 0.17328296053726414
+        },
+        "name": "nuts_calibration",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "confounded_fraction": 1.0,
+          "confounded_status": "POSTERIOR_PROVISIONAL_IDENTIFIABILITY",
+          "tau": 0.2361886088248974,
+          "theta": 1.0912043755147767
+        },
+        "name": "joint_discrepancy_identifiability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "interval": [
+            0.002197265625,
+            0.002197265625
+          ],
+          "new_evaluations": 0,
+          "pf": 0.002197265625,
+          "status": "RELIABILITY_CONVERGED"
+        },
+        "name": "active_learning_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "pce_covariance": [
+            [
+              2.000000000000001,
+              2.0000000000000004
+            ],
+            [
+              2.0000000000000004,
+              3.9999999999999973
+            ]
+          ],
+          "series_exact": 0.044982695392698835,
+          "series_pf": 0.045003255208333336
+        },
+        "name": "multioutput_and_system_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "batch": [
+            "a",
+            "b"
+          ],
+          "batch_information_gain": 5.304540972073923,
+          "information_best": "a",
+          "target_best": "b"
+        },
+        "name": "experimental_design_value_of_information",
+        "status": "PASS"
+      }
+    ],
+    "seed": 1,
+    "status": "PASS"
+  },
+  {
+    "claim_boundary": "This gate verifies the encoded v0.8 scope and complete v0.7 parent gate. It is not formal reliability/metrology accreditation, proof of model completeness, or proof of globally optimal experiment design.",
+    "engine_version": "0.8.0",
+    "gate": "v0.8_integrated_release_gate",
+    "rows": [
+      {
+        "evidence": {
+          "rows": [
+            {
+              "evidence": {
+                "rows": [
+                  {
+                    "evidence": {
+                      "rows": [
+                        {
+                          "evidence": [
+                            {
+                              "seed": 1,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 1729,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 1729,
+                              "status": "PASS"
+                            }
+                          ],
+                          "name": "gum5_multiseed",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "cases": 150,
+                            "failures": 0,
+                            "scale_per_axis": "10^-20..10^20"
+                          },
+                          "name": "three_engine_extreme_rescaling",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "invalid_fraction": 0.0,
+                            "joint_kind": "t_copula",
+                            "n": 120000
+                          },
+                          "name": "correlated_nongaussian_joint",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "input_dimension": 12000,
+                            "representation": "sparse_factor"
+                          },
+                          "name": "structured_covariance_12k",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "empirical_containment": 0.9506,
+                            "n": 100000,
+                            "target": 0.95
+                          },
+                          "name": "gaussian_joint_coverage",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "ar1_u": 0.04009353598781402,
+                            "iid_u": 0.01593449541442607,
+                            "phi": 0.72
+                          },
+                          "name": "explicit_timeseries_dependence",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "shapley": [
+                              0.4886878974388841,
+                              0.5113121025611158
+                            ],
+                            "shapley_sum": 0.9999999999999999,
+                            "sobol_first": [
+                              0.1994826036543694,
+                              0.7957908814977747
+                            ]
+                          },
+                          "name": "nonlinear_sensitivity_attribution",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": null,
+                          "name": "tiny_indefinite_fail_closed",
+                          "status": "PASS"
+                        }
+                      ],
+                      "status": "PASS"
+                    },
+                    "name": "parent_v05_release_gate",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "case_statuses": [
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS"
+                      ],
+                      "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation.",
+                      "status": "PASS"
+                    },
+                    "name": "gum5_all_16_examples",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "ceiling_n": 40000,
+                      "ceiling_status": "NOT_CONVERGED",
+                      "converged_n": 40000,
+                      "converged_status": "CONVERGED"
+                    },
+                    "name": "adaptive_mc_convergence_and_stop",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "cancellation": "FLOAT_DISAGREEMENT",
+                      "exp_interval": [
+                        1.0,
+                        2.7182818284590455
+                      ],
+                      "ordinary": "PASS"
+                    },
+                    "name": "precision_escalation",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "effects": [
+                        0.49310992283305355,
+                        0.5068900771669465
+                      ],
+                      "quality": "STABLE",
+                      "standard_error": [
+                        0.004772488271208942,
+                        0.00477248827120892
+                      ]
+                    },
+                    "name": "correlated_nongaussian_shapley",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "bad_rhat": 1.198228410233008,
+                      "bad_status": "NOT_QUALIFIED",
+                      "good_max_rhat": 1.00013715264891,
+                      "good_status": "QUALIFIED"
+                    },
+                    "name": "posterior_chain_diagnostics",
+                    "status": "PASS"
+                  }
+                ],
+                "status": "PASS"
+              },
+              "name": "parent_v06_release_gate",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "bad_p": 2.058245724902922e-167,
+                "good": "ADEQUACY_NOT_REJECTED_NOT_PROVEN",
+                "unresolved": "ADEQUACY_UNRESOLVED"
+              },
+              "name": "model_adequacy_fail_closed",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "FORM": 3.167124183311986e-05,
+                "IS": 3.1750325464038653e-05,
+                "IS_se": 2.7555196303699525e-07,
+                "exact4": 3.167124183311986e-05,
+                "subset_ratio_to_exact": 1.067221121692846
+              },
+              "name": "rare_event_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "GP_r2": 0.9999999999999813,
+                "PCE_rmse": 4.637964159937099e-15,
+                "PCE_var": 2.1333333333333364
+              },
+              "name": "validated_surrogates",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "diagnostics": "QUALIFIED",
+                "discrepancy_sd": 0.20190935117306252,
+                "exact_mean": 0.9818181818181818,
+                "exact_sd": 0.17407765595569785,
+                "mcmc_mean": 0.9767566609822501,
+                "mcmc_sd": 0.17206788239139387
+              },
+              "name": "bayesian_calibration_with_discrepancy",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "boundary_risk": 0.025000000000000244,
+                "global_consumer_risk": 0.007266666666666667,
+                "guard_width": 0.3919927969080108,
+                "item_consumer_risk": 0.006209665325776159
+              },
+              "name": "conformity_and_decision_risk",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        },
+        "name": "parent_v07_release_gate",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "directional": 0.0502142857142953,
+          "directional_se": 0.0017540041654015741,
+          "qmc": 0.050028483072916664,
+          "qmc_se": 2.0345052083333336e-05
+        },
+        "name": "non_gaussian_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "diagnostics": "QUALIFIED",
+          "divergences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "exact_mean": 0.9818181818181818,
+          "exact_sd": 0.17407765595569785,
+          "mean": 0.9809160151894684,
+          "sd": 0.17162876944364228
+        },
+        "name": "nuts_calibration",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "confounded_fraction": 1.0,
+          "confounded_status": "POSTERIOR_PROVISIONAL_IDENTIFIABILITY",
+          "tau": 0.2594062513348204,
+          "theta": 1.078640828041507
+        },
+        "name": "joint_discrepancy_identifiability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "interval": [
+            0.00146484375,
+            0.00146484375
+          ],
+          "new_evaluations": 0,
+          "pf": 0.00146484375,
+          "status": "RELIABILITY_CONVERGED"
+        },
+        "name": "active_learning_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "pce_covariance": [
+            [
+              1.999999999999998,
+              1.9999999999999984
+            ],
+            [
+              1.9999999999999984,
+              3.9999999999999973
+            ]
+          ],
+          "series_exact": 0.044982695392698835,
+          "series_pf": 0.044942220052083336
+        },
+        "name": "multioutput_and_system_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "batch": [
+            "a",
+            "b"
+          ],
+          "batch_information_gain": 5.304540972073923,
+          "information_best": "a",
+          "target_best": "b"
+        },
+        "name": "experimental_design_value_of_information",
+        "status": "PASS"
+      }
+    ],
+    "seed": 1729,
+    "status": "PASS"
+  },
+  {
+    "claim_boundary": "This gate verifies the encoded v0.8 scope and complete v0.7 parent gate. It is not formal reliability/metrology accreditation, proof of model completeness, or proof of globally optimal experiment design.",
+    "engine_version": "0.8.0",
+    "gate": "v0.8_integrated_release_gate",
+    "rows": [
+      {
+        "evidence": {
+          "rows": [
+            {
+              "evidence": {
+                "rows": [
+                  {
+                    "evidence": {
+                      "rows": [
+                        {
+                          "evidence": [
+                            {
+                              "seed": 1,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 1729,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 20261005,
+                              "status": "PASS"
+                            }
+                          ],
+                          "name": "gum5_multiseed",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "cases": 150,
+                            "failures": 0,
+                            "scale_per_axis": "10^-20..10^20"
+                          },
+                          "name": "three_engine_extreme_rescaling",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "invalid_fraction": 0.0,
+                            "joint_kind": "t_copula",
+                            "n": 120000
+                          },
+                          "name": "correlated_nongaussian_joint",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "input_dimension": 12000,
+                            "representation": "sparse_factor"
+                          },
+                          "name": "structured_covariance_12k",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "empirical_containment": 0.94935,
+                            "n": 100000,
+                            "target": 0.95
+                          },
+                          "name": "gaussian_joint_coverage",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "ar1_u": 0.039887801142208114,
+                            "iid_u": 0.01620232712884185,
+                            "phi": 0.72
+                          },
+                          "name": "explicit_timeseries_dependence",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "shapley": [
+                              0.5434847787412649,
+                              0.4565152212587352
+                            ],
+                            "shapley_sum": 1.0,
+                            "sobol_first": [
+                              0.199225490412096,
+                              0.8033012856346847
+                            ]
+                          },
+                          "name": "nonlinear_sensitivity_attribution",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": null,
+                          "name": "tiny_indefinite_fail_closed",
+                          "status": "PASS"
+                        }
+                      ],
+                      "status": "PASS"
+                    },
+                    "name": "parent_v05_release_gate",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "case_statuses": [
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS"
+                      ],
+                      "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation.",
+                      "status": "PASS"
+                    },
+                    "name": "gum5_all_16_examples",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "ceiling_n": 40000,
+                      "ceiling_status": "NOT_CONVERGED",
+                      "converged_n": 40000,
+                      "converged_status": "CONVERGED"
+                    },
+                    "name": "adaptive_mc_convergence_and_stop",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "cancellation": "FLOAT_DISAGREEMENT",
+                      "exp_interval": [
+                        1.0,
+                        2.7182818284590455
+                      ],
+                      "ordinary": "PASS"
+                    },
+                    "name": "precision_escalation",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "effects": [
+                        0.49225427061415333,
+                        0.5077457293858466
+                      ],
+                      "quality": "STABLE",
+                      "standard_error": [
+                        0.003853368765521191,
+                        0.0038533687655211914
+                      ]
+                    },
+                    "name": "correlated_nongaussian_shapley",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "bad_rhat": 1.2078443382416177,
+                      "bad_status": "NOT_QUALIFIED",
+                      "good_max_rhat": 1.0000687615175945,
+                      "good_status": "QUALIFIED"
+                    },
+                    "name": "posterior_chain_diagnostics",
+                    "status": "PASS"
+                  }
+                ],
+                "status": "PASS"
+              },
+              "name": "parent_v06_release_gate",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "bad_p": 2.058245724902922e-167,
+                "good": "ADEQUACY_NOT_REJECTED_NOT_PROVEN",
+                "unresolved": "ADEQUACY_UNRESOLVED"
+              },
+              "name": "model_adequacy_fail_closed",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "FORM": 3.167124183311986e-05,
+                "IS": 3.2107842719939644e-05,
+                "IS_se": 2.770309789847334e-07,
+                "exact4": 3.167124183311986e-05,
+                "subset_ratio_to_exact": 0.9405530938227498
+              },
+              "name": "rare_event_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "GP_r2": 0.9999999999999679,
+                "PCE_rmse": 1.430547629674925e-14,
+                "PCE_var": 2.1333333333333355
+              },
+              "name": "validated_surrogates",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "diagnostics": "QUALIFIED",
+                "discrepancy_sd": 0.20190935117306252,
+                "exact_mean": 0.9818181818181818,
+                "exact_sd": 0.17407765595569785,
+                "mcmc_mean": 0.9905614539306715,
+                "mcmc_sd": 0.17274050752152925
+              },
+              "name": "bayesian_calibration_with_discrepancy",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "boundary_risk": 0.025000000000000244,
+                "global_consumer_risk": 0.007116666666666667,
+                "guard_width": 0.3919927969080108,
+                "item_consumer_risk": 0.006209665325776159
+              },
+              "name": "conformity_and_decision_risk",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        },
+        "name": "parent_v07_release_gate",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "directional": 0.048964285714295064,
+          "directional_se": 0.00045690097767616967,
+          "qmc": 0.050028483072916664,
+          "qmc_se": 2.0345052083333336e-05
+        },
+        "name": "non_gaussian_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "diagnostics": "QUALIFIED",
+          "divergences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "exact_mean": 0.9818181818181818,
+          "exact_sd": 0.17407765595569785,
+          "mean": 0.9728755288392992,
+          "sd": 0.17322517793229814
+        },
+        "name": "nuts_calibration",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "confounded_fraction": 1.0,
+          "confounded_status": "POSTERIOR_PROVISIONAL_IDENTIFIABILITY",
+          "tau": 0.22774930204877547,
+          "theta": 1.0620881671913254
+        },
+        "name": "joint_discrepancy_identifiability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "interval": [
+            0.000244140625,
+            0.000244140625
+          ],
+          "new_evaluations": 0,
+          "pf": 0.000244140625,
+          "status": "RELIABILITY_CONVERGED"
+        },
+        "name": "active_learning_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "pce_covariance": [
+            [
+              2.0000000000000004,
+              2.000000000000001
+            ],
+            [
+              2.000000000000001,
+              4.0
+            ]
+          ],
+          "series_exact": 0.044982695392698835,
+          "series_pf": 0.04498291015625
+        },
+        "name": "multioutput_and_system_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "batch": [
+            "a",
+            "b"
+          ],
+          "batch_information_gain": 5.304540972073923,
+          "information_best": "a",
+          "target_best": "b"
+        },
+        "name": "experimental_design_value_of_information",
+        "status": "PASS"
+      }
+    ],
+    "seed": 20261005,
+    "status": "PASS"
+  },
+  {
+    "claim_boundary": "This gate verifies the encoded v0.8 scope and complete v0.7 parent gate. It is not formal reliability/metrology accreditation, proof of model completeness, or proof of globally optimal experiment design.",
+    "engine_version": "0.8.0",
+    "gate": "v0.8_integrated_release_gate",
+    "rows": [
+      {
+        "evidence": {
+          "rows": [
+            {
+              "evidence": {
+                "rows": [
+                  {
+                    "evidence": {
+                      "rows": [
+                        {
+                          "evidence": [
+                            {
+                              "seed": 1,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 1729,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 8675309,
+                              "status": "PASS"
+                            }
+                          ],
+                          "name": "gum5_multiseed",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "cases": 150,
+                            "failures": 0,
+                            "scale_per_axis": "10^-20..10^20"
+                          },
+                          "name": "three_engine_extreme_rescaling",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "invalid_fraction": 0.0,
+                            "joint_kind": "t_copula",
+                            "n": 120000
+                          },
+                          "name": "correlated_nongaussian_joint",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "input_dimension": 12000,
+                            "representation": "sparse_factor"
+                          },
+                          "name": "structured_covariance_12k",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "empirical_containment": 0.94966,
+                            "n": 100000,
+                            "target": 0.95
+                          },
+                          "name": "gaussian_joint_coverage",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "ar1_u": 0.04014407120123599,
+                            "iid_u": 0.016189482968389148,
+                            "phi": 0.72
+                          },
+                          "name": "explicit_timeseries_dependence",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "shapley": [
+                              0.5209417009865132,
+                              0.47905829901348684
+                            ],
+                            "shapley_sum": 1.0,
+                            "sobol_first": [
+                              0.19852535236224908,
+                              0.7985607901443356
+                            ]
+                          },
+                          "name": "nonlinear_sensitivity_attribution",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": null,
+                          "name": "tiny_indefinite_fail_closed",
+                          "status": "PASS"
+                        }
+                      ],
+                      "status": "PASS"
+                    },
+                    "name": "parent_v05_release_gate",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "case_statuses": [
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS"
+                      ],
+                      "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation.",
+                      "status": "PASS"
+                    },
+                    "name": "gum5_all_16_examples",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "ceiling_n": 40000,
+                      "ceiling_status": "NOT_CONVERGED",
+                      "converged_n": 40000,
+                      "converged_status": "CONVERGED"
+                    },
+                    "name": "adaptive_mc_convergence_and_stop",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "cancellation": "FLOAT_DISAGREEMENT",
+                      "exp_interval": [
+                        1.0,
+                        2.7182818284590455
+                      ],
+                      "ordinary": "PASS"
+                    },
+                    "name": "precision_escalation",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "effects": [
+                        0.4980753056051541,
+                        0.501924694394846
+                      ],
+                      "quality": "STABLE",
+                      "standard_error": [
+                        0.0032594156457241147,
+                        0.0032594156457241064
+                      ]
+                    },
+                    "name": "correlated_nongaussian_shapley",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "bad_rhat": 1.2061712056006813,
+                      "bad_status": "NOT_QUALIFIED",
+                      "good_max_rhat": 1.000563149199695,
+                      "good_status": "QUALIFIED"
+                    },
+                    "name": "posterior_chain_diagnostics",
+                    "status": "PASS"
+                  }
+                ],
+                "status": "PASS"
+              },
+              "name": "parent_v06_release_gate",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "bad_p": 2.058245724902922e-167,
+                "good": "ADEQUACY_NOT_REJECTED_NOT_PROVEN",
+                "unresolved": "ADEQUACY_UNRESOLVED"
+              },
+              "name": "model_adequacy_fail_closed",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "FORM": 3.167124183311986e-05,
+                "IS": 3.118532230018391e-05,
+                "IS_se": 2.731306019952971e-07,
+                "exact4": 3.167124183311986e-05,
+                "subset_ratio_to_exact": 0.7726176541578712
+              },
+              "name": "rare_event_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "GP_r2": 0.9999999999996644,
+                "PCE_rmse": 1.9154922806051923e-15,
+                "PCE_var": 2.1333333333333315
+              },
+              "name": "validated_surrogates",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "diagnostics": "QUALIFIED",
+                "discrepancy_sd": 0.20190935117306252,
+                "exact_mean": 0.9818181818181818,
+                "exact_sd": 0.17407765595569785,
+                "mcmc_mean": 0.982469362616738,
+                "mcmc_sd": 0.18058524079940486
+              },
+              "name": "bayesian_calibration_with_discrepancy",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "boundary_risk": 0.025000000000000244,
+                "global_consumer_risk": 0.007216666666666666,
+                "guard_width": 0.3919927969080108,
+                "item_consumer_risk": 0.006209665325776159
+              },
+              "name": "conformity_and_decision_risk",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        },
+        "name": "parent_v07_release_gate",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "directional": 0.04971428571429521,
+          "directional_se": 0.0008630747123997778,
+          "qmc": 0.050008138020833336,
+          "qmc_se": 2.5734681479234864e-05
+        },
+        "name": "non_gaussian_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "diagnostics": "QUALIFIED",
+          "divergences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "exact_mean": 0.9818181818181818,
+          "exact_sd": 0.17407765595569785,
+          "mean": 0.9886682894688008,
+          "sd": 0.1701090438847091
+        },
+        "name": "nuts_calibration",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "confounded_fraction": 1.0,
+          "confounded_status": "POSTERIOR_PROVISIONAL_IDENTIFIABILITY",
+          "tau": 0.310114667716029,
+          "theta": 1.1286821345289166
+        },
+        "name": "joint_discrepancy_identifiability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "interval": [
+            0.0009765625,
+            0.0009765625
+          ],
+          "new_evaluations": 0,
+          "pf": 0.0009765625,
+          "status": "RELIABILITY_CONVERGED"
+        },
+        "name": "active_learning_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "pce_covariance": [
+            [
+              2.0000000000000027,
+              2.0000000000000004
+            ],
+            [
+              2.0000000000000004,
+              3.999999999999999
+            ]
+          ],
+          "series_exact": 0.044982695392698835,
+          "series_pf": 0.045064290364583336
+        },
+        "name": "multioutput_and_system_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "batch": [
+            "a",
+            "b"
+          ],
+          "batch_information_gain": 5.304540972073923,
+          "information_best": "a",
+          "target_best": "b"
+        },
+        "name": "experimental_design_value_of_information",
+        "status": "PASS"
+      }
+    ],
+    "seed": 8675309,
+    "status": "PASS"
+  },
+  {
+    "claim_boundary": "This gate verifies the encoded v0.8 scope and complete v0.7 parent gate. It is not formal reliability/metrology accreditation, proof of model completeness, or proof of globally optimal experiment design.",
+    "engine_version": "0.8.0",
+    "gate": "v0.8_integrated_release_gate",
+    "rows": [
+      {
+        "evidence": {
+          "rows": [
+            {
+              "evidence": {
+                "rows": [
+                  {
+                    "evidence": {
+                      "rows": [
+                        {
+                          "evidence": [
+                            {
+                              "seed": 1,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 1729,
+                              "status": "PASS"
+                            },
+                            {
+                              "seed": 2147483647,
+                              "status": "PASS"
+                            }
+                          ],
+                          "name": "gum5_multiseed",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "cases": 150,
+                            "failures": 0,
+                            "scale_per_axis": "10^-20..10^20"
+                          },
+                          "name": "three_engine_extreme_rescaling",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "invalid_fraction": 0.0,
+                            "joint_kind": "t_copula",
+                            "n": 120000
+                          },
+                          "name": "correlated_nongaussian_joint",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "input_dimension": 12000,
+                            "representation": "sparse_factor"
+                          },
+                          "name": "structured_covariance_12k",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "empirical_containment": 0.94997,
+                            "n": 100000,
+                            "target": 0.95
+                          },
+                          "name": "gaussian_joint_coverage",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "ar1_u": 0.0400996717436288,
+                            "iid_u": 0.016485566115006057,
+                            "phi": 0.72
+                          },
+                          "name": "explicit_timeseries_dependence",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": {
+                            "shapley": [
+                              0.4968473920115045,
+                              0.5031526079884955
+                            ],
+                            "shapley_sum": 1.0,
+                            "sobol_first": [
+                              0.20065974550236088,
+                              0.8011118491676478
+                            ]
+                          },
+                          "name": "nonlinear_sensitivity_attribution",
+                          "status": "PASS"
+                        },
+                        {
+                          "evidence": null,
+                          "name": "tiny_indefinite_fail_closed",
+                          "status": "PASS"
+                        }
+                      ],
+                      "status": "PASS"
+                    },
+                    "name": "parent_v05_release_gate",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "case_statuses": [
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS",
+                        "PASS"
+                      ],
+                      "claim_boundary": "Each of the 16 official examples has at least one independently recomputed published numerical hard gate. Some gates reproduce a published submodel/sub-result rather than the entire example. PASS is not formal JCGM certification/accreditation.",
+                      "status": "PASS"
+                    },
+                    "name": "gum5_all_16_examples",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "ceiling_n": 40000,
+                      "ceiling_status": "NOT_CONVERGED",
+                      "converged_n": 40000,
+                      "converged_status": "CONVERGED"
+                    },
+                    "name": "adaptive_mc_convergence_and_stop",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "cancellation": "FLOAT_DISAGREEMENT",
+                      "exp_interval": [
+                        1.0,
+                        2.7182818284590455
+                      ],
+                      "ordinary": "PASS"
+                    },
+                    "name": "precision_escalation",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "effects": [
+                        0.5072781478813257,
+                        0.49272185211867425
+                      ],
+                      "quality": "STABLE",
+                      "standard_error": [
+                        0.0028263898526031373,
+                        0.0028263898526031317
+                      ]
+                    },
+                    "name": "correlated_nongaussian_shapley",
+                    "status": "PASS"
+                  },
+                  {
+                    "evidence": {
+                      "bad_rhat": 1.2022341323422367,
+                      "bad_status": "NOT_QUALIFIED",
+                      "good_max_rhat": 1.000049638409555,
+                      "good_status": "QUALIFIED"
+                    },
+                    "name": "posterior_chain_diagnostics",
+                    "status": "PASS"
+                  }
+                ],
+                "status": "PASS"
+              },
+              "name": "parent_v06_release_gate",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "bad_p": 2.058245724902922e-167,
+                "good": "ADEQUACY_NOT_REJECTED_NOT_PROVEN",
+                "unresolved": "ADEQUACY_UNRESOLVED"
+              },
+              "name": "model_adequacy_fail_closed",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "FORM": 3.167124183311986e-05,
+                "IS": 3.16037440541954e-05,
+                "IS_se": 2.7448733914197003e-07,
+                "exact4": 3.167124183311986e-05,
+                "subset_ratio_to_exact": 0.9829668226118319
+              },
+              "name": "rare_event_reliability",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "GP_r2": 0.9999999999989498,
+                "PCE_rmse": 2.0781729646134683e-15,
+                "PCE_var": 2.1333333333333315
+              },
+              "name": "validated_surrogates",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "diagnostics": "QUALIFIED",
+                "discrepancy_sd": 0.20190935117306252,
+                "exact_mean": 0.9818181818181818,
+                "exact_sd": 0.17407765595569785,
+                "mcmc_mean": 0.9756719261740585,
+                "mcmc_sd": 0.1762243135504366
+              },
+              "name": "bayesian_calibration_with_discrepancy",
+              "status": "PASS"
+            },
+            {
+              "evidence": {
+                "boundary_risk": 0.025000000000000244,
+                "global_consumer_risk": 0.0078,
+                "guard_width": 0.3919927969080108,
+                "item_consumer_risk": 0.006209665325776159
+              },
+              "name": "conformity_and_decision_risk",
+              "status": "PASS"
+            }
+          ],
+          "status": "PASS"
+        },
+        "name": "parent_v07_release_gate",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "directional": 0.04853571428572356,
+          "directional_se": 0.0011269352213848702,
+          "qmc": 0.050028483072916664,
+          "qmc_se": 2.0345052083333336e-05
+        },
+        "name": "non_gaussian_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "diagnostics": "QUALIFIED",
+          "divergences": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "exact_mean": 0.9818181818181818,
+          "exact_sd": 0.17407765595569785,
+          "mean": 0.9840623847320321,
+          "sd": 0.16972753402498408
+        },
+        "name": "nuts_calibration",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "confounded_fraction": 1.0,
+          "confounded_status": "POSTERIOR_PROVISIONAL_IDENTIFIABILITY",
+          "tau": 0.29162216525296947,
+          "theta": 1.0737480121407164
+        },
+        "name": "joint_discrepancy_identifiability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "interval": [
+            0.002197265625,
+            0.002197265625
+          ],
+          "new_evaluations": 0,
+          "pf": 0.002197265625,
+          "status": "RELIABILITY_CONVERGED"
+        },
+        "name": "active_learning_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "pce_covariance": [
+            [
+              2.0000000000000018,
+              2.0000000000000018
+            ],
+            [
+              2.0000000000000018,
+              4.0000000000000036
+            ]
+          ],
+          "series_exact": 0.044982695392698835,
+          "series_pf": 0.045023600260416664
+        },
+        "name": "multioutput_and_system_reliability",
+        "status": "PASS"
+      },
+      {
+        "evidence": {
+          "batch": [
+            "a",
+            "b"
+          ],
+          "batch_information_gain": 5.304540972073923,
+          "information_best": "a",
+          "target_best": "b"
+        },
+        "name": "experimental_design_value_of_information",
+        "status": "PASS"
+      }
+    ],
+    "seed": 2147483647,
+    "status": "PASS"
+  }
+]

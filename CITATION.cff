@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use Uncertainty Lab in research, please cite this software."
+title: "Uncertainty Lab"
+type: software
+authors:
+  - family-names: Aggarwal
+    given-names: Rajat
+version: 1.0.0
+date-released: 2026-10-06
+license: Apache-2.0
+repository-code: "https://github.com/Raj037/uncertainty-lab"
+url: "https://github.com/Raj037/uncertainty-lab"
+keywords:
+  - uncertainty quantification
+  - metrology
+  - reliability
+  - Bayesian calibration
+  - experimental design
+  - uncertainty propagation

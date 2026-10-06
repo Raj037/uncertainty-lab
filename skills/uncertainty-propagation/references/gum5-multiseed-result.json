@@ -1,0 +1,915 @@
+{
+  "benchmark": "JCGM_GUM-5_2026_multiseed_stability",
+  "claim_boundary": "Five deterministic streams test stochastic stability of the six encoded hard gates only.",
+  "n_per_mc_case": 500000,
+  "runs": [
+    {
+      "cases": [
+        {
+          "case_id": "GUM5-3",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 180.1557,
+              "name": "relative_molecular_mass",
+              "observed": 180.15576,
+              "passed": true
+            },
+            {
+              "expected": 0.0038,
+              "name": "standard_uncertainty",
+              "observed": 0.0038235585519251565,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.2",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 0,
+              "name": "estimate",
+              "observed": 0.0,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "standard_uncertainty",
+              "observed": 2.0,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.3",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": 0.0033606295833331157,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "mc_standard_uncertainty",
+              "observed": 1.9963422696991824,
+              "passed": true
+            },
+            {
+              "expected": -3.88,
+              "name": "coverage_lower",
+              "observed": -3.870568130888342,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "coverage_upper",
+              "observed": 3.8813185436183804,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "analytic_coverage_magnitude",
+              "observed": 3.879406741347821,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.4",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": 0.012231895202056505,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "mc_standard_uncertainty",
+              "observed": 10.138399372605713,
+              "passed": true
+            },
+            {
+              "expected": -17,
+              "name": "coverage_lower",
+              "observed": -17.022709557492423,
+              "passed": true
+            },
+            {
+              "expected": 17,
+              "name": "coverage_upper",
+              "observed": 16.992216413131604,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "lpu_standard_uncertainty",
+              "observed": 10.14889156509222,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-7",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 1.234,
+              "name": "estimate",
+              "observed": 1.2339999999967404,
+              "passed": true
+            },
+            {
+              "expected": 0.0539,
+              "name": "first_order_standard_uncertainty",
+              "observed": 0.05385164807134505,
+              "passed": true
+            },
+            {
+              "expected": 0.075,
+              "name": "second_order_standard_uncertainty",
+              "observed": 0.07491822586721311,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-14",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 10.81,
+              "name": "activity_kBq",
+              "observed": 10.810017622206207,
+              "passed": true
+            },
+            {
+              "expected": 0.054,
+              "name": "standard_uncertainty_kBq",
+              "observed": 0.05411420831266128,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        }
+      ],
+      "seed": 1,
+      "status": "PASS"
+    },
+    {
+      "cases": [
+        {
+          "case_id": "GUM5-3",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 180.1557,
+              "name": "relative_molecular_mass",
+              "observed": 180.15576,
+              "passed": true
+            },
+            {
+              "expected": 0.0038,
+              "name": "standard_uncertainty",
+              "observed": 0.0038235585519251565,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.2",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 0,
+              "name": "estimate",
+              "observed": 0.0,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "standard_uncertainty",
+              "observed": 2.0,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.3",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": -0.003399589989381085,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "mc_standard_uncertainty",
+              "observed": 2.000801369427284,
+              "passed": true
+            },
+            {
+              "expected": -3.88,
+              "name": "coverage_lower",
+              "observed": -3.880248848941542,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "coverage_upper",
+              "observed": 3.877141778037004,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "analytic_coverage_magnitude",
+              "observed": 3.879406741347821,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.4",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": -0.023369161565586237,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "mc_standard_uncertainty",
+              "observed": 10.156326757992273,
+              "passed": true
+            },
+            {
+              "expected": -17,
+              "name": "coverage_lower",
+              "observed": -17.01190166240684,
+              "passed": true
+            },
+            {
+              "expected": 17,
+              "name": "coverage_upper",
+              "observed": 17.027247835086413,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "lpu_standard_uncertainty",
+              "observed": 10.14889156509222,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-7",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 1.234,
+              "name": "estimate",
+              "observed": 1.2339999999967404,
+              "passed": true
+            },
+            {
+              "expected": 0.0539,
+              "name": "first_order_standard_uncertainty",
+              "observed": 0.05385164807134505,
+              "passed": true
+            },
+            {
+              "expected": 0.075,
+              "name": "second_order_standard_uncertainty",
+              "observed": 0.07491822586721311,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-14",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 10.81,
+              "name": "activity_kBq",
+              "observed": 10.810017622206207,
+              "passed": true
+            },
+            {
+              "expected": 0.054,
+              "name": "standard_uncertainty_kBq",
+              "observed": 0.05411420831266128,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        }
+      ],
+      "seed": 1729,
+      "status": "PASS"
+    },
+    {
+      "cases": [
+        {
+          "case_id": "GUM5-3",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 180.1557,
+              "name": "relative_molecular_mass",
+              "observed": 180.15576,
+              "passed": true
+            },
+            {
+              "expected": 0.0038,
+              "name": "standard_uncertainty",
+              "observed": 0.0038235585519251565,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.2",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 0,
+              "name": "estimate",
+              "observed": 0.0,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "standard_uncertainty",
+              "observed": 2.0,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.3",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": 0.0011526279097191987,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "mc_standard_uncertainty",
+              "observed": 2.0014763989889786,
+              "passed": true
+            },
+            {
+              "expected": -3.88,
+              "name": "coverage_lower",
+              "observed": -3.879670908536587,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "coverage_upper",
+              "observed": 3.8837275713840715,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "analytic_coverage_magnitude",
+              "observed": 3.879406741347821,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.4",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": -0.011462654531785578,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "mc_standard_uncertainty",
+              "observed": 10.160133455048776,
+              "passed": true
+            },
+            {
+              "expected": -17,
+              "name": "coverage_lower",
+              "observed": -17.052974486761514,
+              "passed": true
+            },
+            {
+              "expected": 17,
+              "name": "coverage_upper",
+              "observed": 17.002417107233256,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "lpu_standard_uncertainty",
+              "observed": 10.14889156509222,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-7",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 1.234,
+              "name": "estimate",
+              "observed": 1.2339999999967404,
+              "passed": true
+            },
+            {
+              "expected": 0.0539,
+              "name": "first_order_standard_uncertainty",
+              "observed": 0.05385164807134505,
+              "passed": true
+            },
+            {
+              "expected": 0.075,
+              "name": "second_order_standard_uncertainty",
+              "observed": 0.07491822586721311,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-14",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 10.81,
+              "name": "activity_kBq",
+              "observed": 10.810017622206207,
+              "passed": true
+            },
+            {
+              "expected": 0.054,
+              "name": "standard_uncertainty_kBq",
+              "observed": 0.05411420831266128,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        }
+      ],
+      "seed": 20261005,
+      "status": "PASS"
+    },
+    {
+      "cases": [
+        {
+          "case_id": "GUM5-3",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 180.1557,
+              "name": "relative_molecular_mass",
+              "observed": 180.15576,
+              "passed": true
+            },
+            {
+              "expected": 0.0038,
+              "name": "standard_uncertainty",
+              "observed": 0.0038235585519251565,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.2",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 0,
+              "name": "estimate",
+              "observed": 0.0,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "standard_uncertainty",
+              "observed": 2.0,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.3",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": -0.005835024790427796,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "mc_standard_uncertainty",
+              "observed": 2.0004023800663555,
+              "passed": true
+            },
+            {
+              "expected": -3.88,
+              "name": "coverage_lower",
+              "observed": -3.884299422909399,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "coverage_upper",
+              "observed": 3.885069810079624,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "analytic_coverage_magnitude",
+              "observed": 3.879406741347821,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.4",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": -0.0004218634993981891,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "mc_standard_uncertainty",
+              "observed": 10.155365627154755,
+              "passed": true
+            },
+            {
+              "expected": -17,
+              "name": "coverage_lower",
+              "observed": -17.014127077408844,
+              "passed": true
+            },
+            {
+              "expected": 17,
+              "name": "coverage_upper",
+              "observed": 16.999930140003457,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "lpu_standard_uncertainty",
+              "observed": 10.14889156509222,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-7",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 1.234,
+              "name": "estimate",
+              "observed": 1.2339999999967404,
+              "passed": true
+            },
+            {
+              "expected": 0.0539,
+              "name": "first_order_standard_uncertainty",
+              "observed": 0.05385164807134505,
+              "passed": true
+            },
+            {
+              "expected": 0.075,
+              "name": "second_order_standard_uncertainty",
+              "observed": 0.07491822586721311,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-14",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 10.81,
+              "name": "activity_kBq",
+              "observed": 10.810017622206207,
+              "passed": true
+            },
+            {
+              "expected": 0.054,
+              "name": "standard_uncertainty_kBq",
+              "observed": 0.05411420831266128,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        }
+      ],
+      "seed": 8675309,
+      "status": "PASS"
+    },
+    {
+      "cases": [
+        {
+          "case_id": "GUM5-3",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 180.1557,
+              "name": "relative_molecular_mass",
+              "observed": 180.15576,
+              "passed": true
+            },
+            {
+              "expected": 0.0038,
+              "name": "standard_uncertainty",
+              "observed": 0.0038235585519251565,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.2",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 0,
+              "name": "estimate",
+              "observed": 0.0,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "standard_uncertainty",
+              "observed": 2.0,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.3",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": -0.0017999540528056386,
+              "passed": true
+            },
+            {
+              "expected": 2,
+              "name": "mc_standard_uncertainty",
+              "observed": 2.001185111358877,
+              "passed": true
+            },
+            {
+              "expected": -3.88,
+              "name": "coverage_lower",
+              "observed": -3.88181691621371,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "coverage_upper",
+              "observed": 3.880340603480038,
+              "passed": true
+            },
+            {
+              "expected": 3.88,
+              "name": "analytic_coverage_magnitude",
+              "observed": 3.879406741347821,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-6.4",
+          "checks": [
+            {
+              "expected": 0,
+              "name": "mc_mean",
+              "observed": -0.007235024419896372,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "mc_standard_uncertainty",
+              "observed": 10.14996909920215,
+              "passed": true
+            },
+            {
+              "expected": -17,
+              "name": "coverage_lower",
+              "observed": -17.017975432674895,
+              "passed": true
+            },
+            {
+              "expected": 17,
+              "name": "coverage_upper",
+              "observed": 17.020416188902736,
+              "passed": true
+            },
+            {
+              "expected": 10.1,
+              "name": "lpu_standard_uncertainty",
+              "observed": 10.14889156509222,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-7",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 1.234,
+              "name": "estimate",
+              "observed": 1.2339999999967404,
+              "passed": true
+            },
+            {
+              "expected": 0.0539,
+              "name": "first_order_standard_uncertainty",
+              "observed": 0.05385164807134505,
+              "passed": true
+            },
+            {
+              "expected": 0.075,
+              "name": "second_order_standard_uncertainty",
+              "observed": 0.07491822586721311,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        },
+        {
+          "case_id": "GUM5-14",
+          "checks": [
+            {
+              "expected": 1,
+              "name": "three_engine_verification",
+              "observed": 1,
+              "passed": true
+            },
+            {
+              "expected": 10.81,
+              "name": "activity_kBq",
+              "observed": 10.810017622206207,
+              "passed": true
+            },
+            {
+              "expected": 0.054,
+              "name": "standard_uncertainty_kBq",
+              "observed": 0.05411420831266128,
+              "passed": true
+            }
+          ],
+          "status": "PASS"
+        }
+      ],
+      "seed": 2147483647,
+      "status": "PASS"
+    }
+  ],
+  "seeds": [
+    1,
+    1729,
+    20261005,
+    8675309,
+    2147483647
+  ],
+  "status": "PASS"
+}
