@@ -1,0 +1,23 @@
+{
+  "schema": "uncertainty-lab.github-release-receipt.v1",
+  "repository": "Raj037/uncertainty-lab",
+  "release_version": "1.0.0",
+  "intended_tag": "v1.0.0",
+  "scientific_validation": {
+    "receipt_sha256": "83c9eb2c1ad745c9f94c59f611d424239203d620067527ee126b6a613ceb069f",
+    "python_source_tree_sha256": "1f0699e8e78382df0f56cd5e610237beffd6e3dec1649a0ea3392f1a581bc578",
+    "note": "The scientific implementation was not changed by the GitHub/public-packaging pass."
+  },
+  "final_public_document_hashes": {
+    "README.md": "49391afe4d5c9e55e24f1c359dcf32a000bedf1730d7cce2f7ea0dee355eccc0",
+    "PUBLIC_RELEASE.md": "d4147a53a5d53a7b4536fb77fc55044cea231bc202e139fb8875bffa7014a998"
+  },
+  "provenance_note": "README.md and PUBLIC_RELEASE.md intentionally differ from the frozen scientific validation receipt because final GitHub/legal wording was added after scientific qualification. This receipt records those final documentation hashes without modifying the original scientific validation evidence.",
+  "live_repository_checks": {
+    "duplicate_nested_repository_absent": true,
+    "compiled_or_cache_artifacts_absent": true,
+    "required_public_and_legal_files_present": true,
+    "critical_scientific_and_manifest_hashes_checked": 10,
+    "critical_scientific_and_manifest_hashes_match": true
+  }
+}
